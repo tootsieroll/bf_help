@@ -10,8 +10,10 @@ body {
   width: 100%;
   height: auto;
   min-height: 100%;
-  background: white;
-  color: black;
+  background: $bg;
+  color: $text;
+
+  @include body;
 
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: none;
@@ -25,6 +27,14 @@ body {
   &.locked {
     overflow: hidden;
   }
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
 }
 
 *:focus, *:active {

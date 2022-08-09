@@ -1,0 +1,16 @@
+$font-family-base: 'NoirPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-header: 'Antapani', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+@mixin h1 {
+  font: 800 130px/120px $font-family-header;
+  letter-spacing: 0.04em;
+}
+@mixin h2 {
+  font: 300 57px/68px $font-family-base;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+@mixin body {
+  font: 300 22px/26px $font-family-base;
+  letter-spacing: 0.11em;
+}
