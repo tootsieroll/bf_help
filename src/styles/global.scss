@@ -1,0 +1,51 @@
+@import "base";
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background: white;
+  color: black;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+*:focus, *:active {
+  outline: none;
+}
+
+p {
+  margin: 16px 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.locked {
+  overflow: hidden !important;
+}
+
+@import "layout";
+@import "blocks";
+@import "components";
