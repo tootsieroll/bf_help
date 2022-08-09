@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'NoirPro';
+  src: url('/src/fonts/NoirPro-Regular.eot');
+  src: local('☞Noir Pro'), local('NoirPro-Regular'),
+  url('/src/fonts/NoirPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/src/fonts/NoirPro-Regular.woff2') format('woff2'),
+  url('/src/fonts/NoirPro-Regular.woff') format('woff'),
+  url('/src/fonts/NoirPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NoirPro';
+  src: url('/src/fonts/NoirPro-Light.eot');
+  src: local('☞Noir Pro Light'), local('NoirPro-Light'),
+  url('/src/fonts/NoirPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('/src/fonts/NoirPro-Light.woff2') format('woff2'),
+  url('/src/fonts/NoirPro-Light.woff') format('woff'),
+  url('/src/fonts/NoirPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NoirPro';
+  src: url('/src/fonts/NoirPro-Semibold.eot');
+  src: local('☞Noir Pro Semibold'), local('NoirPro-Semibold'),
+  url('/src/fonts/NoirPro-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('/src/fonts/NoirPro-Semibold.woff2') format('woff2'),
+  url('/src/fonts/NoirPro-Semibold.woff') format('woff'),
+  url('/src/fonts/NoirPro-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Antapani';
+  src: local('Antapani Extra Bold'), local('Antapani-Extra-Bold'),
+  url('/src/fonts/Antapani-ExtraBold.woff2') format('woff2'),
+  url('/src/fonts/Antapani-ExtraBold.woff') format('woff'),
+  url('/src/fonts/Antapani-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}

@@ -24,7 +24,7 @@ module.exports = {
     watch: true,
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: '[name].bundle.js',
+        filename: '[name].bundle.js'
     },
     module: {
         rules: [
@@ -41,18 +41,20 @@ module.exports = {
             },
             /** HTML */
             {
-                test: /\.(html|njk|nunjucks)$/,
-                use: [{
-                    loader: 'simple-nunjucks-loader',
-                    options: {
-                        searchPaths: [
-                            path.resolve(__dirname, './src/templates'),
-                        ],
-                        assetsPaths: [
-                            path.resolve(__dirname, './src/images'),
-                        ]
-                    }
-                }]
+                test: /\.(html|njk)$/,
+                use: [
+                    {
+                        loader: 'html-loader',
+                    },
+                    {
+                        loader: 'nunjucks-html-loader',
+                        options: {
+                            searchPaths: [
+                                path.resolve(__dirname, './src/templates'),
+                            ],
+                        }
+                    },
+                ]
             },
             /** Css */
             {
@@ -68,11 +70,17 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext]'
+                }
             },
             /** Шрифты */
             {
                 test: /\.(woff(2)?|eot|ttf|otf|)$/,
-                type: 'asset/inline',
+                type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[name][ext]'
+                }
             },
         ],
     },
