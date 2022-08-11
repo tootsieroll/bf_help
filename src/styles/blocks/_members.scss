@@ -1,6 +1,11 @@
 .members {
+    width: 100%;
     color: $text;
-    padding: 86px 0 86px 0;
+    padding: 50px 10px 60px 0;
+    background-image: url(/src/images/members/spot2.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 400px;
     }
     
     .members__title,
@@ -8,4 +13,32 @@
     .members__two__text,
     .members__three__text {
     font-family: $font-family-base;
+    margin: 20px 0 35px 0;
     }
+
+    .members__title {
+        display: flex;
+        justify-content: center;
+        }
+    
+        .members__one {
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px 350px 0 250px;
+        gap: 30px;
+        }
+    
+        .members__two {
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+        margin: 0 250px 10px 350px;
+        gap: 20px;
+        }
+    
+        .members__three {
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px 350px 0 250px;
+        gap: 20px;
+        }
