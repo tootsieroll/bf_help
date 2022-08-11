@@ -4,20 +4,21 @@
     color: $text;
     padding: 50px 0 0 0;
     background-image: url(/src/images/about/spot1.png);
-    background-repeat:no-repeat;
-    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: 0 -50%;
+    background-size: 400px;
     overflow: hidden;
     }
     
     .about__title,
     .about__text {
     font-family: $font-family-base;
-    margin: 20px 400px 10px 300px;
+    margin: 20px 350px 10px 250px;
     }
     
     .about__text--border {
     border: 1px solid $text;
     border-radius: 17px;
-    height: 159px;
-    padding: 20px 0 0 20px;
+    max-height: 100%;
+    padding: 20px 20px 20px 20px;
     }
