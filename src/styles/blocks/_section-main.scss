@@ -1,0 +1,68 @@
+.nav {
+    display: grid;
+    position: absolute;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+}
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: center;
+    margin-top: 10px;
+    margin-left: 75px;
+}
+.container {
+    display: grid;
+    grid-template-areas: 'container-pic container-content';
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(#2C5E5B, #415C7A);
+    margin: 0;
+}
+.container-content__name {
+    @include h1;
+    color: white;
+    margin: 50px;
+}
+.container-content__text1, .container-content__text2 {
+    @include body;
+    color: white;
+    justify-items: center;
+    margin: 53px;
+}
+.container-button1 {
+    width: 245px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(70deg, #9FCBFF, #FFF7A5);
+    padding: 8px;
+    @include body;
+    margin-left: 25%;
+}
+.container-button2 {
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(70deg, #FEC28D, #FFF9B9);
+    padding: 8px;
+    @include body;
+    margin-left: 95%;
+}
+.container-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.container-pic {
+    width: 1670px;
+    height: 800px;
+}
+.container-logo {
+    margin-top: -35px;
+    margin-left: 340px;
+}
