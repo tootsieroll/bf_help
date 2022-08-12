@@ -1,37 +1,40 @@
 <section class="application">
     <h2 class="application_text">СТАТЬ УЧАСТНИКОМ ПРОЕКТА</h2>
     <form class="application__form">
-        <p class="application__form_text">Название организации</p>
-        <input class="application_input-box" type="text" />
-        <p class="application__form_text">Адрес</p>
-        <input class="application_input-box" type="text" />
-        <p class="application__form_text">ФИО Главного врача</p>
-        <input class="application_input-box" type="text" />
-        <p class="application__form_text">ФИО Представителя</p>
-        <input class="application_input-box" type="text" />
-        <p class="application__form_text">Почта</p>
-        <input class="application_input-box__post" type="text" />
-        <p class="application__form_text">Телефон</p>
-        <input class="application_input-box__telefon" type="text" />
-        <p class="application__form_text">Формат поддержки: Разово / регулярно</p>
-        <input class="application_input-box" type="text" />
-    </form>
-    <div class="application_button">
-        <form action="#">
-            <button class="application_button__about_project">
+        <label class="application__form_text" for="input_1">Название организации</label>
+        <input id="input_1" class="application_input-box" type="text" />
+        <label for="input_2" class="application__form_text">Адрес</label>
+        <input id="input_2" class="application_input-box" type="text" />
+        <label for="input_3" class="application__form_text">ФИО Главного врача</label>
+        <input id="input_3" class="application_input-box" type="text" />
+        <label for="input_4" class="application__form_text">ФИО Представителя</label>
+        <input id="input_4" class="application_input-box" type="text" />
+        <div class="application__form_conteiner">
+            <div class="form__post">
+                <label for="input_5" class="application__form_text">Почта</label>
+                <input id="input_5" class="application_input-box__post" type="text" />
+            </div>
+            <div class="form__telefon">
+                <label for="input_6" class="application__form_text">Телефон</label>
+                <input id="input_6" class="application_input-box__telefon" type="text" />
+            </div>
+        </div>
+        <label for="input_7" class="application__form_text">Формат поддержки: Разово / регулярно</label>
+        <input id="input_7" class="application_input-box" type="text" />
+        <div class="application_button">
+            <button class="application_button__about_project" onclick="">
                 ПОЛОЖЕНИЕ ПРОЕКТА
             </button>
-        </form>
-        <form action="#">
-            <button class="application_button__loading">
+            <div class="application_button__loading">
                 Перетащите сюда файлы или
                 нажмите, чтобы загрузить лицензию
-            </button>
-        </form>
-        <form action="#">
-            <button class="application_button__aplication">
+            </div>
+        </div>
+        <div class="application_button__end">
+            <button class="application_button__aplication" onclick="">
                 ОТПРАВИТЬ ЗАЯВКУ
             </button>
-        </form>
-    </div>
+        </div>
+        </div>
+    </form>
 </section>
