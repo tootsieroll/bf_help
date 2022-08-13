@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Kdam+Thmor+Pro&family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap');
 .nav {
-    display: grid;
+    display: flex;
     position: absolute;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
@@ -9,11 +10,21 @@
     color: #FFFFFF;
 }
 .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    justify-items: center;
-    margin-top: 10px;
-    margin-left: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu__option {
+    margin: 0 0 0 35px;
+}
+.option-a {
+    flex-basis: 9%;
+}
+.option-b {
+    flex-basis: 13%;
+}
+.option-c {
+    flex-basis: 13%;
 }
 .container {
     display: grid;
@@ -58,7 +69,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.container-pic {
+.container-pic__img {
     width: 1670px;
     height: 800px;
 }
