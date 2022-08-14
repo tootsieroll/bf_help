@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NoirPro', sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: grey;
+}
+.header-option__button1-0 {
+    width: 130px;
+    border: none;
+    border-radius: 15px;
+    background: #98C9B6;
+    padding: 8px;
+    color: #FFFFFF;
+}
+.header-option__button2-0 {
+    width: 130px;
+    border: none;
+    border-radius: 15px;
+    background: #C7796D;
+    padding: 8px;
+    color: #FFFFFF;
+}
