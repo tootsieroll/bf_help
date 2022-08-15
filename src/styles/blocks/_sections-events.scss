@@ -1,11 +1,13 @@
 .reports {
-    margin: 20px auto;
+    margin: 20px auto;}
+    h2{
     text-align: center;
     @include h2;
   }
       
   .slider-reports {
-    max-width: 2985px;
+    max-width: 2985px;}
+    h2{
     text-align: center;
     font-family: 'Noir Pro';
     font-style: normal;
