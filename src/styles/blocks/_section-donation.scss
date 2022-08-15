@@ -1,0 +1,20 @@
+.donation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient($dark-green, $dark-blue);
+    padding: 100px 0 0 0;
+}
+.donation-text {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26.4px;
+    font-family: $font-family-base;
+    letter-spacing: 0.11em;
+    margin: 20px 300px 20px 300px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}

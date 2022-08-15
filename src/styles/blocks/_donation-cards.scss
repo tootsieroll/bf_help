@@ -1,0 +1,48 @@
+h3 {
+    font-weight: 600;
+    font-size: 79px;
+    line-height: 114px;
+    font-family: $font-family-base;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+p {
+    margin: 0;
+}
+.donation__card {
+    max-width: 77%;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid #FFFFFF;
+    margin: 75px 41px 119px 41px;
+    padding: 34px;
+    box-shadow: 0px 4px 58px 11px rgba(23, 53, 87, 0.6);
+    border-radius: 17px;
+}
+.donation-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#card-none {
+    display: none;
+}
+.donation__card-image {
+    border-radius: 17px;
+    margin-right: 34px;
+    max-width: 100%;
+    height: auto;
+}
+.donation__card-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+.donation__card-text_parag {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: .11em;
+}
