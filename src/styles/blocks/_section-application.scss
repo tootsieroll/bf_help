@@ -1,0 +1,234 @@
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+
+    .application {
+        position: relative;
+        left: 175px;
+    }
+
+    .application_text {
+        left: 175px;
+
+        @include h2;
+    }
+
+    .application__form_text {
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        margin: 10px 0 0 0;
+
+        font-family: 'Noir Pro', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    .application_input-box {
+        width: 860px;
+        height: 55px;
+        background: #E2E2E2;
+        border-radius: 16px;
+    }
+
+    .application__form_conteiner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 860px;
+    }
+
+    .application_input-box__post {
+        width: 350px;
+        height: 55px;
+        background: #E2E2E2;
+        border-radius: 16px;
+    }
+
+    .application_input-box__telefon {
+        width: 350px;
+        height: 55px;
+        background: #E2E2E2;
+        border-radius: 16px;
+    }
+
+    .application_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 860px;
+        margin: 50px 0 0 0;
+        padding: 20px 0 0 0;
+    }
+
+    .application_button__about_project {
+        width: 410px;
+        height: 77px;
+        background: linear-gradient(243.74deg, #FFFAE1 3.43%, #87C1B7 96.99%);
+        border-radius: 13px;
+
+        font-family: 'Noir Pro', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 104%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .application_button__loading {
+        width: 405px;
+        height: 77px;
+        background: linear-gradient(331.15deg, #B5DCDA -10.25%, rgba(255, 249, 185, 0) 385.42%);
+        opacity: 0.55;
+        border-radius: 13px;
+        font-family: 'Noir Pro', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 104%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .application_button__end {
+        margin: 60px 0 0 0;
+    }
+
+    .application_button__aplication {
+        width: 860px;
+        height: 77px;
+        background: linear-gradient(111.56deg, #2C5E5B 18.82%, #415C7A 64.16%);
+        border-radius: 13px;
+        font-family: 'Noir Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 104%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.87);
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .application {
+        position: relative;
+        left: 30px;
+    }
+
+    .application_text {
+        font-family: 'Noir Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+
+    .application__form_text {
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        margin: 10px 0 0 0;
+
+        font-family: 'Noir Pro', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21, 6px;
+        color: #000000;
+    }
+
+    .application_input-box {
+        width: 470px;
+        height: 50px;
+        background: #E2E2E2;
+        border-radius: 16px;
+    }
+
+    .application__form_conteiner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 470px;
+    }
+
+    .application_input-box__post {
+        width: 213px;
+        height: 50px;
+        background: #E2E2E2;
+        border-radius: 16px;
+    }
+
+    .application_input-box__telefon {
+        width: 213px;
+        height: 50px;
+        background: #E2E2E2;
+        border-radius: 16px;
+    }
+
+    .application_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 470px;
+        margin: 40px 0 0 0;
+        padding: 20px 0 0 0;
+    }
+
+    .application_button__about_project {
+        width: 200px;
+        height: 77px;
+        background: linear-gradient(243.74deg, #FFFAE1 3.43%, #87C1B7 96.99%);
+        border-radius: 13px;
+
+        font-family: 'Noir Pro', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 104%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .application_button__loading {
+        width: 199px;
+        height: 77px;
+        background: linear-gradient(331.15deg, #B5DCDA -10.25%, rgba(255, 249, 185, 0) 385.42%);
+        opacity: 0.55;
+        border-radius: 13px;
+        font-family: 'Noir Pro', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 104%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .application_button__end {
+        margin: 40px 0 0 0;
+    }
+
+    .application_button__aplication {
+        width: 470px;
+        height: 77px;
+        background: linear-gradient(111.56deg, #2C5E5B 18.82%, #415C7A 64.16%);
+        border-radius: 13px;
+        font-family: 'Noir Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 104%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.87);
+    }
+}
