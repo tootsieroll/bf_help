@@ -38,3 +38,37 @@
     padding-top: 20px;
     padding-bottom: 26px;
 }
+
+/*для сматрфонов*/
+@media screen and (max-width:767px) {
+    .about {
+        background-image: none;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .about__title {
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+    }
+
+    .text1,
+    .text2{
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.11em;
+    }
+
+    .about__text--border {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.11em;
+        padding: 22px 22px 22px 22px;
+    }
+}
