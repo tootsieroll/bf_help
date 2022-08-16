@@ -1,11 +1,16 @@
 .members {
-    width: 100%;
     color: $text;
-    padding: 50px 10px 60px 0;
+    padding: 60px;
     background-image: url(/src/images/members/spot2.png);
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: 400px;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 1161px;
+    margin: 0 auto;
 }
     
 .members__title,
@@ -13,7 +18,6 @@
 .members__two__text,
 .members__three__text {
     font-family: $font-family-base;
-    margin: 20px 0 35px 0;
     }
 
 .members__title {
@@ -36,23 +40,29 @@ a:hover {
 .members__three {
     display: flex;
     justify-content: flex-start;
-    margin: 10px 350px 0 250px;
+    align-items: center;
 }
-    
+
 .members__two {
     display: flex;
     justify-content: flex-end;
-    align-items:center;
-    margin: 0 250px 10px 350px;
-    gap: 20px;
+    align-items: center;
+    padding: 18px 0 0;
+    gap: 23px;
+}
+
+.members__two__text {
+    padding: 49px 0 0;
 }
     
 .members__one {
-    gap: 30px;
+padding: 61px 0 0 0;
+gap: 35px;
 }
 
 .members__three {
-    gap: 20px;
+padding: 65px 0 0 0;
+gap: 35px;
 }
 
 /* для десктопов*/
