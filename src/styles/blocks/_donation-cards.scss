@@ -32,6 +32,10 @@ p {
     display: none;
 }
 .donation__card-image {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
     border-radius: 17px;
     margin-right: 34px;
     overflow: hidden;
@@ -40,8 +44,8 @@ p {
     flex-shrink: 0;
 }
 .donation__card-image-image {
-    width: 471px;
-    height: 611px;
+    width: 100%;
+    height: auto;
 }
 .donation__card-text {
     display: flex;
@@ -64,7 +68,7 @@ p {
 @media screen and (max-width: 767px) {
     .donation__card {
         flex-wrap: wrap;
-        margin: 0 18px 103px 18px;
+        margin: 103px 18px 103px 18px;
     }
     h3 {
         width: 100%;
@@ -88,6 +92,8 @@ p {
         margin: 0;
     }
     .donation__card-image {
+        display: flex;
+        
         order: 1;
         margin-top: 41px;
         width: 416px;
@@ -97,9 +103,17 @@ p {
         padding: 0 18px 0 18px;
     }
 }
+@media screen and (min-width: 1024px) and (max-width: 1277px) {
+    .donation__card-text_parag{
+        font-size: 30px
+    }
+    h3 {
+        font-size: 42px;
+    }
+}
 @media screen and (min-width: 768px ) and (max-width: 1023px){
     .donation-cards {
-        margin: 0 30px 0 30px;
+        margin: 75px 30px 0 30px;
     }
     .donation__card {
         flex-wrap: wrap;
@@ -115,9 +129,9 @@ p {
         margin: 0;
     }
     .donation__card-text_parag {
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 21.6px;
+        //font-weight: 300;
+        //font-size: 18px;
+        //line-height: 21.6px;
         text-align: center;
     }
     .donation__card-image {
@@ -129,8 +143,8 @@ p {
     h3 {
         width: 100%;
         text-align: center;
-        font-weight: 600;
-        font-size: 44px;
-        line-height: 64px;
+        //font-weight: 600;
+        //font-size: 44px;
+        //line-height: 64px;
     }
 }
