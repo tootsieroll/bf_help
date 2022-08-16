@@ -43,3 +43,21 @@
   font-weight: 800;
   font-style: normal;
 }
+@font-face {
+	font-family: 'IBM Plex Sans';
+	src: local('IBM Plex Sans Regular'), local('IBM-Plex-Sans-Regular'),
+	url(/src/fonts/IBMPlexSans-Regular.woff) format('woff'), 
+  url(/src/fonts/IBMPlexSans-Regular.ttf) format('truetype'), 
+  url(/src/fonts/IBMPlexSans-Regular.eot) format('eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: local('Roboto'),
+	url(/src/fonts/Roboto.woff) format('woff'), 
+  url(/src/fonts/Roboto.ttf) format('truetype'), 
+  url(/src/fonts/Roboto.eot) format('eot');
+	font-weight: 500;
+	font-style: normal;
+}
