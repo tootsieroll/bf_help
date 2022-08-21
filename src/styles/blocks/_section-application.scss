@@ -1,353 +1,322 @@
-@media screen and (min-width: 768px) and (max-width: 1920px) {
-  .application {
-    width: 1170px;
+.application {
+  background-color: white;
+  padding: rem(100px 60px 0);
+  &__title {
+    margin-bottom: rem(43px);
     text-align: center;
-    margin: auto;
+  }
+  &__form {
+    display: block;
+    position: relative;
+    max-width: rem(1055px);
+    margin: 0 auto;
+
+    @include max-screen(767px) {
+      max-width: rem(470px);
+    }
+
+    &-group {
+      margin-bottom: rem(28px);
+    }
+
+    &-label {
+      font-family: $font-family-base;
+      @include font('light', 24px, 65px);
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+    }
+
+    &-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: rem(97px);
+    }
+
+    &-submit {
+      margin-top: rem(37px);
+    }
+
   }
 
-  .application_text {
-    padding: 105px 0 28px 0;
-    @include h2;
+  &__checkbox {
+    display: block;
+    padding: rem(8.5px 0 8px 50px);
+    margin-left: rem(16px);
+    margin-top: rem(33px);
+    margin-bottom: rem(46px);
+    font-family: $font-family-base;
+    @include font('light', 14px, 16px);
+    letter-spacing: 0.015em;
+    position: relative;
+    min-height: rem(33px);
+    &-fake, input[type="checkbox"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: rem(33px);
+      height: rem(33px);
+      z-index: 10;
+      box-sizing: border-box;
+    }
+    input[type="checkbox"] {
+      opacity: 0;
+      &:checked + .application__checkbox-fake:before {
+        content: '';
+        display: block;
+        width: rem(10px);
+        height: rem(10px);
+        background-color: black;
+      }
+    }
+    &-fake {
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
   }
 
-  .application__form_text {
+  &__button {
+    appearance: none;
+    border: 0;
+    box-shadow: none;
     display: flex;
     align-items: center;
-    letter-spacing: 0.11em;
+    justify-content: center;
+    height: rem(77px);
+    width: 100%;
+    border-radius: rem(13px);
+    color: transparentize(black, 0.13);
+    font-family: $font-family-base;
+    @include font('light', 25px, 26px);
+    letter-spacing: 0;
+    text-align: center;
+    padding: rem(10px);
     text-transform: uppercase;
-    padding: 20.5px 0 20.5px 0;
+    cursor: pointer;
+    transition: 120ms;
 
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-  }
+    &:hover,
+    &:active {
+      filter: brightness(95%);
+      text-decoration: none;
+    }
 
-  .application_input-box {
-    width: 100%;
-    height: 65px;
-    background: #e2e2e2;
-    border-radius: 16px;
-    border: 0;
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    color: #000000;
-  }
+    &--about {
+      background: linear-gradient(243.74deg, #fffae1 3.43%, #87c1b7 96.99%);
+    }
 
-  .application__form_conteiner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 97px;
-    width: 100%;
-  }
+    &--loading {
+      background: linear-gradient(
+        331.15deg,
+        transparentize(#b5dcda, 0.45) -10.25%,
+        rgba(255, 249, 185, 0.55) 385.42%
+      );
+      text-transform: none;
+      input {
+        opacity: 0;
+        position: absolute;
+      }
+    }
 
-  .application_input-box__post {
-    width: 100%;
-    height: 65px;
-    background: #e2e2e2;
-    border-radius: 16px;
-    border: 0;
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    color: #000000;
-  }
-
-  .application_input-box__telefon {
-    width: 100%;
-    height: 65px;
-    background: #e2e2e2;
-    border-radius: 16px;
-    border: 0;
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    color: #000000;
-  }
-
-  .application__form_conteiner2 {
-    display: grid;
-    grid-template-columns: 33px 1fr;
-    gap: 17px;
-    margin: 46px 0 37px 0;
-  }
-
-  .application_input-checkbox {
-    box-sizing: border-box;
-    width: 33px;
-    height: 33px;
-    border: 0.5px solid #000000;
-  }
-
-  .application__form_text1 {
-    display: flex;
-    align-items: flex-start;
-    margin: 10px 0px 8px 0px;
-    font-family: 'Noir Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 104%;
-    letter-spacing: 0.015em;
-    color: #000000;
-  }
-
-  .application_button {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    gap: 90px;
-    margin: 46px 0 37px 0;
-  }
-
-  .application_button__about_project {
-    width: 100%;
-    height: 77px;
-    background: linear-gradient(243.74deg, #fffae1 3.43%, #87c1b7 96.99%);
-    border-radius: 13px;
-    border: 0;
-
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 104%;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.87);
-  }
-
-  .application_button__loading {
-    width: 100%;
-    height: 77px;
-    background: linear-gradient(
-      331.15deg,
-      #b5dcda -10.25%,
-      rgba(255, 249, 185, 0) 385.42%
-    );
-    opacity: 0.55;
-    border-radius: 13px;
-    border: 0;
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 104%;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.87);
-  }
-
-  .application_button__aplication {
-    width: 100%;
-    height: 77px;
-    background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
-    border-radius: 13px;
-    border: 0;
-    margin: 0px 0 104px 0;
-    font-family: 'Noir Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 104%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.87);
+    &--submit {
+      background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
+      color: transparentize(white, 0.13);
+    }
   }
 }
-
-@media screen and (max-width: 767px) {
-  .application {
-    width: 470px;
-    text-align: center;
-    margin: auto;
-  }
-
-  .application_text {
-    margin: 102.82px 0 66px 0;
-    font-family: 'Noir Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-    color: #000000;
-  }
-
-  .application__form_text {
-    font-family: 'Noir Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-
-    color: #000000;
-    padding: 16px 0 16px 0;
-  }
-
-  .application_input-box {
-    width: 100%;
-    height: 50px;
-    background: #e2e2e2;
-    border-radius: 16px;
-    border: 0;
-    font-family: 'Noir Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 22px;
-    color: #000000;
-  }
-
-  .application_input-checkbox {
-    box-sizing: border-box;
-    width: 22px;
-    height: 22px;
-    border: 0.5px solid #000000;
-
-    font-family: 'Noir Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 104%;
-    text-align: center;
-    letter-spacing: 0.015em;
-
-    color: #000000;
-  }
-
-  .application__form_conteiner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 44px;
-    width: 100%;
-  }
-
-  .application_input-box__post {
-    width: 100%;
-    height: 50px;
-    background: #e2e2e2;
-    border-radius: 16px;
-    border: 0;
-    font-family: 'Noir Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 22px;
-    color: #000000;
-  }
-
-  .application_input-box__telefon {
-    width: 100%;
-    height: 50px;
-    background: #e2e2e2;
-    border-radius: 16px;
-    border: 0;
-    font-family: 'Noir Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 22px;
-    color: #000000;
-  }
-
-  .application__form_conteiner2 {
-    display: grid;
-    grid-template-columns: 17px 1fr;
-    gap: 13px;
-    margin: 26px 0 47px 0;
-  }
-
-  .application_input-checkbox {
-    box-sizing: border-box;
-    width: 17px;
-    height: 17px;
-    border: 0.5px solid #000000;
-  }
-
-  .application__form_text1 {
-    display: flex;
-    align-items: flex-start;
-    margin: 8px 0px 8px 0px;
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 9px;
-    line-height: 104%;
-    letter-spacing: 0.015em;
-
-    color: #000000;
-  }
-
-  .application_button {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    width: 100%;
-    border: 0;
-  }
-
-  .application_button__about_project {
-    width: 100%;
-    height: 77px;
-    background: linear-gradient(243.74deg, #fffae1 3.43%, #87c1b7 96.99%);
-    border-radius: 13px;
-    border: 0;
-
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 104%;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.87);
-  }
-
-  .application_button__loading {
-    width: 100%;
-    height: 77px;
-    background: linear-gradient(
-      331.15deg,
-      #b5dcda -10.25%,
-      rgba(255, 249, 185, 0) 385.42%
-    );
-    opacity: 0.55;
-    border-radius: 13px;
-    border: 0;
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 104%;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.87);
-  }
-
-  .application_button__end {
-  }
-
-  .application_button__aplication {
-    margin: 28px 0 93px;
-    width: 100%;
-    height: 77px;
-    background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
-    border-radius: 13px;
-    border: 0;
-    font-family: 'Noir Pro', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 104%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.87);
-  }
-}
+//
+//@media screen and (max-width: 767px) {
+//  .application {
+//    width: 470px;
+//    text-align: center;
+//    margin: auto;
+//  }
+//
+//  .application_text {
+//    margin: 102.82px 0 66px 0;
+//    font-family: 'Noir Pro';
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 40px;
+//    line-height: 48px;
+//    text-align: center;
+//    letter-spacing: 0.11em;
+//    text-transform: uppercase;
+//    color: #000000;
+//  }
+//
+//  .application__form_text {
+//    font-family: 'Noir Pro';
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 18px;
+//    line-height: 22px;
+//    display: flex;
+//    align-items: center;
+//    letter-spacing: 0.11em;
+//    text-transform: uppercase;
+//
+//    color: #000000;
+//    padding: 16px 0 16px 0;
+//  }
+//
+//  .application_input-box {
+//    width: 100%;
+//    height: 50px;
+//    background: #e2e2e2;
+//    border-radius: 16px;
+//    border: 0;
+//    font-family: 'Noir Pro';
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 14px;
+//    line-height: 22px;
+//    color: #000000;
+//  }
+//
+//  .application_input-checkbox {
+//    box-sizing: border-box;
+//    width: 22px;
+//    height: 22px;
+//    border: 0.5px solid #000000;
+//
+//    font-family: 'Noir Pro';
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 12px;
+//    line-height: 104%;
+//    text-align: center;
+//    letter-spacing: 0.015em;
+//
+//    color: #000000;
+//  }
+//
+//  .application__form_conteiner {
+//    display: grid;
+//    grid-template-columns: 1fr 1fr;
+//    gap: 44px;
+//    width: 100%;
+//  }
+//
+//  .application_input-box__post {
+//    width: 100%;
+//    height: 50px;
+//    background: #e2e2e2;
+//    border-radius: 16px;
+//    border: 0;
+//    font-family: 'Noir Pro';
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 14px;
+//    line-height: 22px;
+//    color: #000000;
+//  }
+//
+//  .application_input-box__telefon {
+//    width: 100%;
+//    height: 50px;
+//    background: #e2e2e2;
+//    border-radius: 16px;
+//    border: 0;
+//    font-family: 'Noir Pro';
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 14px;
+//    line-height: 22px;
+//    color: #000000;
+//  }
+//
+//  .application__form_conteiner2 {
+//    display: grid;
+//    grid-template-columns: 17px 1fr;
+//    gap: 13px;
+//    margin: 26px 0 47px 0;
+//  }
+//
+//  .application_input-checkbox {
+//    box-sizing: border-box;
+//    width: 17px;
+//    height: 17px;
+//    border: 0.5px solid #000000;
+//  }
+//
+//  .application__form_text1 {
+//    display: flex;
+//    align-items: flex-start;
+//    margin: 8px 0px 8px 0px;
+//    font-family: 'Noir Pro', Arial, sans-serif;
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 9px;
+//    line-height: 104%;
+//    letter-spacing: 0.015em;
+//
+//    color: #000000;
+//  }
+//
+//  .application_button {
+//    display: grid;
+//    grid-template-columns: 1fr 1fr;
+//    gap: 70px;
+//    width: 100%;
+//    border: 0;
+//  }
+//
+//  .application_button__about_project {
+//    width: 100%;
+//    height: 77px;
+//    background: linear-gradient(243.74deg, #fffae1 3.43%, #87c1b7 96.99%);
+//    border-radius: 13px;
+//    border: 0;
+//
+//    font-family: 'Noir Pro', Arial, sans-serif;
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 20px;
+//    line-height: 104%;
+//    text-align: center;
+//    color: rgba(0, 0, 0, 0.87);
+//  }
+//
+//  .application_button__loading {
+//    width: 100%;
+//    height: 77px;
+//    background: linear-gradient(
+//      331.15deg,
+//      #b5dcda -10.25%,
+//      rgba(255, 249, 185, 0) 385.42%
+//    );
+//    opacity: 0.55;
+//    border-radius: 13px;
+//    border: 0;
+//    font-family: 'Noir Pro', Arial, sans-serif;
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 14px;
+//    line-height: 104%;
+//    text-align: center;
+//    color: rgba(0, 0, 0, 0.87);
+//  }
+//
+//  .application_button__end {
+//  }
+//
+//  .application_button__aplication {
+//    margin: 28px 0 93px;
+//    width: 100%;
+//    height: 77px;
+//    background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
+//    border-radius: 13px;
+//    border: 0;
+//    font-family: 'Noir Pro', Arial, sans-serif;
+//    font-style: normal;
+//    font-weight: 300;
+//    font-size: 25px;
+//    line-height: 104%;
+//    text-align: center;
+//    color: rgba(255, 255, 255, 0.87);
+//  }
+//}

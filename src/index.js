@@ -8,4 +8,11 @@ import './styles/global.scss';
 window.$ = require('jquery');
 window.slick = require('slick-carousel');
 
-import './js/main.js';
+$(document).ready(function () {
+    $('#donation-slider').slick({
+        autoplay: true,
+        prevArrow: '#donation-slider-prev',
+        nextArrow: '#donation-slider-next',
+        fade: true,
+    });
+});

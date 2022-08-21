@@ -1,59 +1,73 @@
 <section class="application">
-  <h2 class="application_text">СТАТЬ УЧАСТНИКОМ ПРОЕКТА</h2>
+  <h2 class="application__title">СТАТЬ УЧАСТНИКОМ ПРОЕКТА</h2>
   <form class="application__form">
-    <label class="application__form_text" for="input_1"
-      >Название организации</label
-    >
-    <input id="input_1" class="application_input-box" type="text" />
-    <label for="input_2" class="application__form_text">Адрес</label>
-    <input id="input_2" class="application_input-box" type="text" />
-    <label for="input_3" class="application__form_text"
-      >ФИО Главного врача</label
-    >
-    <input id="input_3" class="application_input-box" type="text" />
-    <label for="input_4" class="application__form_text"
-      >ФИО Представителя</label
-    >
-    <input id="input_4" class="application_input-box" type="text" />
-    <div class="application__form_conteiner">
-      <div class="form__post">
-        <label for="input_5" class="application__form_text">Почта</label>
-        <input id="input_5" class="application_input-box__post" type="text" />
+    <div class="application__form-group">
+      <label class="application__form-label" for="organization">
+        Название организации
+      </label>
+      <input id="organization" class="input application__form-input" type="text" />
+    </div>
+    <div class="application__form-group">
+      <label for="address" class="application__form-label">
+        Адрес
+      </label>
+      <input id="address" class="input application__form-input" type="text" />
+    </div>
+    <div class="application__form-group">
+      <label for="nameMain" class="application__form-label">
+        ФИО Главного врача
+      </label>
+      <input id="nameMain" class="input application__form-input" type="text" />
+    </div>
+    <div class="application__form-group">
+      <label for="nameAgent" class="application__form-label">
+        ФИО Представителя
+      </label>
+      <input id="nameAgent" class="input application__form-input" type="text" />
+    </div>
+    <div class="application__form-row">
+      <div class="application__form-group">
+        <label for="mail" class="application__form-label">
+          Почта
+        </label>
+        <input id="mail" class="input application__form-input" type="email" />
       </div>
-      <div class="form__telefon">
-        <label for="input_6" class="application__form_text">Телефон</label>
+      <div class="application__form-group">
+        <label for="phone" class="application__form-label">
+          Телефон
+        </label>
         <input
-          id="input_6"
-          class="application_input-box__telefon"
+          id="phone"
+          class="input application__form-input"
           type="text"
         />
       </div>
     </div>
-    <label for="input_7" class="application__form_text"
-      >Формат поддержки: Разово / регулярно</label
-    >
-    <input id="input_7" class="application_input-box" type="text" />
-    <div class="application__form_conteiner2">
-      <input id="input_8" class="application_input-checkbox" type="checkbox" />
-      <label class="application__form_text1" for="input_8"
-        >даю согласие на обработку моих персональных данных и согласен(а) с
-        политикой об обработке персональных данных</label
-      >
+    <div class="application__form-group">
+      <label for="format" class="application__form-label">
+        Формат поддержки: Разово / регулярно
+      </label>
+      <input id="format" class="input application__form-input" type="text" />
     </div>
-    <div class="application_button">
-      <button
-        class="application_button__about_project"
-        onclick=""
-        type="button"
-      >
+    <div class="application__form-group">
+      <label class="application__checkbox" for="agreement">
+        <input id="agreement" type="checkbox" />
+        <span class="application__checkbox-fake"></span>
+        даю согласие на обработку моих персональных данных и согласен(а) с
+        политикой об обработке персональных данных
+      </label>
+    </div>
+    <div class="application__form-row">
+      <a href="#" class="application__button application__button--about">
         ПОЛОЖЕНИЕ ПРОЕКТА
-      </button>
-      <div class="application_button__loading">
+      </a>
+      <label for="license" class="application__button application__button--loading">
         Перетащите сюда файлы или нажмите, чтобы загрузить лицензию
-      </div>
+        <input type="file" id="license"/>
+      </label>
     </div>
-    <div class="application_button__end">
-      <button class="application_button__aplication" type="submit" onclick="">
+    <div class="application__form-submit">
+      <button class="application__button application__button--submit" type="submit">
         ОТПРАВИТЬ ЗАЯВКУ
       </button>
     </div>

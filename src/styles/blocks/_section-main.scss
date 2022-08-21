@@ -1,7 +1,6 @@
 .main {
   position: relative;
-  height: 100vh;
-  min-height: rem(1000px);
+  height: rem(1000px);
   color: $text-inverse;
   z-index: 1;
 
@@ -15,7 +14,7 @@
     &-pic {
       display: flex;
       align-items: flex-start;
-      justify-content: flex-end;
+      justify-content: flex-start;
       overflow: hidden;
       width: 100%;
       img {

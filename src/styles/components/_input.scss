@@ -1,0 +1,16 @@
+.input {
+  appearance: none;
+  border: none;
+  background: $bg-light-gray;
+  border-radius: rem(16px);
+  box-shadow: none;
+  padding: rem(19.5px 26px);
+  margin: 0;
+  height: rem(65px);
+  width: 100%;
+  display: block;
+  text-align: left;
+  font-family: $font-family-base;
+  @include body;
+  color: $text;
+}

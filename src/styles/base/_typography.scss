@@ -13,11 +13,17 @@ $font-family-ibm: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-seri
   @include font('light', 57px, 68px);
   letter-spacing: 0.11em;
   text-transform: uppercase;
+  @include max-screen(767px) {
+    @include font-size(40px, 48px)
+  }
 }
 @mixin body {
   font-family: $font-family-base;
   @include font('light', 22px, 26px);
   letter-spacing: 0.11em;
+  @include max-screen(767px) {
+    @include font-size(18px, 21px)
+  }
 }
 @mixin text-footer {
   font-family: $font-family-base;
