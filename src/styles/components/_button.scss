@@ -1,0 +1,33 @@
+.button {
+  display: block;
+  font-family: $font-family-ibm;
+  @include font('regular', 15px, 42px);
+  letter-spacing: 0;
+  text-align: center;
+  color: $text-inverse;
+  text-transform: uppercase;
+  border-radius: rem(10px);
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  padding: rem(0 10px);
+  margin: 0;
+  background-color: $bg-gray;
+  width: rem(174px);
+  height: rem(41px);
+  cursor: pointer;
+  transition: 120ms;
+
+  &:hover,
+  &:active {
+    filter: brightness(95%);
+  }
+
+  &--green {
+    background-color: $bg-green;
+  }
+  &--red {
+    background-color: $bg-red;
+  }
+}
+

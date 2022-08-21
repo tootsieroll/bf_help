@@ -1,74 +1,94 @@
 .about {
-  display: flex;
-  flex-wrap: wrap;
   color: $text;
-  padding: 100px;
-  background-image: url(/src/images/about/spot1.png);
-  background-repeat: no-repeat;
-  background-position: 0 -10%;
-  background-size: 400px;
+  background-color: white;
+  position: relative;
   overflow: hidden;
-}
 
-.wrapper {
-  max-width: 1216px;
-  margin: 0 auto;
-}
-
-.about__title,
-.about__text {
-  font-family: $font-family-base;
-}
-
-.about__title,
-.text1,
-.text2 {
-  padding: 26px 28px 0 27px;
-}
-
-.about__text--border {
-  border: 1px solid $text;
-  border-radius: 17px;
-  max-height: 100%;
-  padding: 26px 26px 26px 26px;
-  margin-top: 27px;
-}
-
-.text2 {
-  padding-top: 20px;
-  padding-bottom: 26px;
-}
-
-/*для сматрфонов*/
-@media screen and (max-width: 767px) {
-  .about {
-    background-image: none;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
   }
 
-  .wrapper {
-    max-width: 100%;
-    margin: 0;
+  &:before {
+    top: rem(-200px);
+    left: 0;
+    width: rem(502px);
+    height: rem(1092px);
+    background: url(/src/images/about/spot1.png) no-repeat center/contain;
+  }
+  &:after {
+    right: 0;
+    bottom: rem(-16px);
+    width: rem(590px);
+    height: rem(1256px);
+    background: url(/src/images/members/spot2.png) no-repeat center/contain;
   }
 
-  .about__title {
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
+  &__wrapper {
+    max-width: rem(1216px);
+    margin: 0 auto;
+    position: relative;
+    padding: rem(100px 30px 150px);
   }
 
-  .text1,
-  .text2 {
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.11em;
+  &__title,
+  &__text {
+    text-align: left!important;
+    padding: rem(0 27px);
+  }
+  &__title {
+    margin-bottom: rem(49px);
+  }
+  &__text {
+    margin: rem(26px 0);
+    @include body;
+
+    strong {
+      font-weight: 400;
+    }
+
+    &--border {
+      border: 1px solid $text;
+      border-radius: rem(17px);
+      padding: rem(26px 27px);
+    }
   }
 
-  .about__text--border {
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.11em;
-    padding: 22px 22px 22px 22px;
-  }
 }
+
+///*для сматрфонов*/
+//@media screen and (max-width: 767px) {
+//  .about {
+//    background-image: none;
+//  }
+//
+//  .wrapper {
+//    max-width: 100%;
+//    margin: 0;
+//  }
+//
+//  .about__title {
+//    font-size: 40px;
+//    line-height: 48px;
+//    text-align: center;
+//    letter-spacing: 0.11em;
+//    text-transform: uppercase;
+//  }
+//
+//  .text1,
+//  .text2 {
+//    font-size: 18px;
+//    line-height: 22px;
+//    letter-spacing: 0.11em;
+//  }
+//
+//  .about__text--border {
+//    font-size: 18px;
+//    line-height: 22px;
+//    letter-spacing: 0.11em;
+//    padding: 22px 22px 22px 22px;
+//  }
+//}

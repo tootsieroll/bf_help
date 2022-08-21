@@ -1,0 +1,31 @@
+.nav {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  top: rem(21px);
+
+  &__menu {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    &__option {
+      margin: rem(0 12.5px);
+      a {
+        font-family: $font-family-ibm;
+        @include font('regular', 16px, 20px);
+        letter-spacing: 0.015em;
+        text-decoration: none;
+        color: $text-inverse;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -133,33 +133,6 @@ a {
   display: none;
 }
 
-/*кнопки*/
-.button {
-  margin: 10px 24px;
-  display: block;
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-  color: $text-inverse;
-}
-
-.button__help__green {
-  width: 174px;
-  height: 41px;
-  background: #80b19e;
-  border-radius: 10px;
-}
-
-.button__help__red {
-  width: 174px;
-  height: 41px;
-  background: #d55242;
-  border-radius: 10px;
-}
-
 .write__mail {
   display: flex;
   justify-items: center;

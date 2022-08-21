@@ -1,29 +1,67 @@
 .members {
   color: $text;
-  padding: 60px;
-  background-image: url(/src/images/members/spot2.png);
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-  background-size: 400px;
-  overflow: hidden;
+  padding: rem(0 27px);
+  margin-top: rem(100px);
+
+  &__title {
+    text-align: center;
+    margin-bottom: rem(60px);
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  .member {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: rem(20px);
+    a {
+      text-decoration: none;
+      color: $text;
+      transition: 400ms ease-out;
+      @include body;
+      &:hover {
+        @include effect-green-links;
+      }
+    }
+
+    &--one {
+      max-width: rem(800px);
+      .member__icon {
+        width: rem(52px);
+        height: rem(93px);
+        margin-left: rem(27px);
+        transform: rotate(-30deg);
+      }
+    }
+    &--two {
+      align-self: flex-end;
+      max-width: rem(860px);
+      .member__icon {
+        width: rem(104px);
+        height: rem(140px);
+        margin-right: rem(27px);
+      }
+      .member__text {
+        margin-bottom: rem(16px);
+      }
+    }
+    &--three {
+      max-width: rem(880px);
+      .member__icon {
+        width: rem(121px);
+        height: rem(103px);
+        margin-left: rem(20px);
+      }
+    }
+  }
 }
 
-.wrapper {
-  max-width: 1161px;
-  margin: 0 auto;
-}
-
-.members__title,
-.members__one__text,
-.members__two__text,
-.members__three__text {
-  font-family: $font-family-base;
-}
-
-.members__title {
-  display: flex;
-  justify-content: center;
-}
 
 .members__one a,
 .members__two a,
@@ -32,9 +70,6 @@
   color: $text;
 }
 
-a:hover {
-  text-shadow: 0 0 7px #2c5e5bd9;
-}
 
 .members__one,
 .members__three {
@@ -65,22 +100,6 @@ a:hover {
   gap: 35px;
 }
 
-/* для десктопов*/
-@media screen and (max-width: 1200px) {
-  .members {
-    background-size: 300px;
-  }
-
-  .members__one,
-  .members__three {
-    margin: 0 0 20px 65px;
-  }
-
-  .members__two {
-    margin: 0 95px 20px 145px;
-    gap: 20px;
-  }
-}
 
 /* для планшетов*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {

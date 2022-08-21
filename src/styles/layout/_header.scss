@@ -1,46 +1,83 @@
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-basis: auto;
-  height: 98px;
-  align-items: center;
-  padding: 60px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #ffffff;
-  background: #6e6e6e;
-}
-.header-option__number {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-}
-.header-option__mail {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-.header-option__button1-0 {
-  width: 174px;
-  border: none;
-  border-radius: 10px;
-  background: #98c9b6;
-  padding: 8px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  color: #ffffff;
-}
-.header-option__button2-0 {
-  width: 174px;
-  border: none;
-  border-radius: 10px;
-  background: #c7796d;
-  padding: 8px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
+  position: relative;
+  height: rem(100px);
+  width: 100%;
+  background-color: $bg-gray;
+  color: $text-inverse;
+  &__inner {
+    position: relative;
+    margin: 0 auto;
+    max-width: rem(1220px);
+    padding: rem(15px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-  color: #ffffff;
+  &-option {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    &--logo {
+      width: rem(342px);
+      height: rem(72px);
+    }
+    &--contacts {
+      margin: rem(0 20px);
+    }
+    &__phone {
+      a {
+        color: $text-inverse;
+        font-family: $font-family-roboto;
+        @include font('medium', 14px, 16px);
+        letter-spacing: 0;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__mail {
+      a {
+        color: $text-inverse;
+        font-family: $font-family-roboto;
+        @include font('medium', 16px, 18px);
+        letter-spacing: 0;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__search {
+      width: rem(22px);
+      height: rem(24px);
+      margin-right: rem(32px);
+      a {
+        display: inline-block;
+      }
+    }
+    &__profile {
+      width: rem(29px);
+      height: rem(26px);
+      margin-right: rem(32px);
+      a {
+        display: inline-block;
+      }
+    }
+    &__buttons {
+      display: flex;
+      flex-flow: row nowrap;
+      button:first-child {
+        margin-right: rem(30px);
+      }
+    }
+  }
+  &-divider {
+    margin: rem(0 20px);
+    width: 1px;
+    height: rem(43px);
+    background-color: white;
+  }
 }

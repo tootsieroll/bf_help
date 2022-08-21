@@ -22,65 +22,67 @@
   display: flex;
   flex-wrap: wrap;
 }
-h2 {
-  width: 1219px;
-  height: 59px;
-  left: 355px;
-  font-weight: 300;
-  font-size: 57px;
-  line-height: 117.5%;
-  text-align: center;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  color: #000000;
-  white-space: nowrap;
-  margin-left: 42px;
-}
-h3 {
-  margin-top: 5%;
-  font-weight: 300;
-  font-size: 57px;
-  line-height: 68px;
-  letter-spacing: 0.095em;
-  color: #000000;
-  margin-left: 34.11px;
-  white-space: nowrap;
-}
-h4 {
-  font-weight: 600;
-  font-size: 57px;
-  line-height: 68px;
-  letter-spacing: 0.095em;
-  background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  white-space: nowrap;
-  margin-left: 34.11px;
-  margin-top: -18%;
-}
-h5 {
-  font-weight: 300;
-  font-size: 57px;
-  line-height: 68px;
-  letter-spacing: 0.11em;
-  background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-left: 34.11px;
-  margin-top: -100px;
-}
-a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 17px;
-  text-align: left;
-}
-.contacts_search-image {
-  display: flex;
-  text-align: left;
-  margin-left: -445%;
+.contacts {
+  h2 {
+    width: 1219px;
+    height: 59px;
+    left: 355px;
+    font-weight: 300;
+    font-size: 57px;
+    line-height: 117.5%;
+    text-align: center;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #000000;
+    white-space: nowrap;
+    margin-left: 42px;
+  }
+  h3 {
+    margin-top: 5%;
+    font-weight: 300;
+    font-size: 57px;
+    line-height: 68px;
+    letter-spacing: 0.095em;
+    color: #000000;
+    margin-left: 34.11px;
+    white-space: nowrap;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 68px;
+    letter-spacing: 0.095em;
+    background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    margin-left: 34.11px;
+    margin-top: -18%;
+  }
+  h5 {
+    font-weight: 300;
+    font-size: 57px;
+    line-height: 68px;
+    letter-spacing: 0.11em;
+    background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 34.11px;
+    margin-top: -100px;
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: left;
+  }
+  .contacts_search-image {
+    display: flex;
+    text-align: left;
+    margin-left: -445%;
+  }
 }

@@ -6,6 +6,10 @@ $text: #000000;
 $text-inverse: #ffffff;
 
 $bg: #ffffff;
+$bg-gray: #6e6e6e;
+
+$bg-green: #80b19e;
+$bg-red: #d55242;
 
 @mixin style-1 {
   background: linear-gradient(90deg, #aec2f9 -34.39%, #a5e1ff 145.2%);
@@ -56,26 +60,20 @@ $bg: #ffffff;
 }
 
 @mixin effect-green-links {
-  background: #d9d9d9;
-  box-shadow: 0 0 7px rgba(44, 94, 91, 0.85);
+  text-shadow: rem(0 0 7px) rgba(44, 94, 91, 0.85);
 }
 @mixin effect-blue {
-  background: #d9d9d9;
-  box-shadow: 0 0 32px rgba(203, 243, 255, 0.55);
+  box-shadow: rem(0 0 32px) rgba(203, 243, 255, 0.55);
 }
 @mixin effect-orange {
-  background: #d9d9d9;
-  box-shadow: 0 0 26px rgba(255, 223, 185, 0.71);
+  box-shadow: rem(0 0 26px) rgba(255, 223, 185, 0.71);
 }
 @mixin effect-biruza {
-  background: #d9d9d9;
-  box-shadow: 0 0 26px rgba(120, 191, 157, 0.65);
+  box-shadow: rem(0 0 26px) rgba(120, 191, 157, 0.65);
 }
 @mixin effect-dark-blue {
-  background: #d9d9d9;
-  box-shadow: 0 4px 58px 11px rgba(23, 53, 87, 0.6);
+  box-shadow: rem(0 4px 58px 11px) rgba(23, 53, 87, 0.6);
 }
 @mixin effect-gray {
-  background: #d9d9d9;
-  box-shadow: -5px 5px 25px rgba(107, 121, 131, 0.69);
+  box-shadow: rem(-5px 5px 25px) rgba(107, 121, 131, 0.69);
 }
