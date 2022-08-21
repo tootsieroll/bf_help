@@ -3,7 +3,7 @@
     width: 591px;
     padding: 34px;
     display: grid;
-    grid-template-columns: 180px 1fr 1fr 220px;
+    grid-template-columns: 1fr;
     grid-template-rows: 60px 130px 30px 70px;
   }
   hr {
@@ -68,7 +68,8 @@
     color: #ffffff;
     grid-column: 1/3;
     grid-row: 4/4;
-    margin-left: 50px;
+    margin-left: 40px;
+    text-align: left;
   }
   .footer_link {
     height: 35px;
@@ -96,6 +97,16 @@
   h3 {
     text-align: center;
   }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: left;
+  }
+
   .footer_links {
     width: 149px;
     height: 35px;
@@ -109,6 +120,9 @@
     grid-column: 4/4;
     grid-row: 3/4;
     margin-top: -70px;
+
+    display: grid;
+
   }
   .footer_links-text {
     font-weight: 400;
