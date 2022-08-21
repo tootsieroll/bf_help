@@ -14,3 +14,12 @@ $font-family-header: 'Antapani', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font: 300 22px/26px $font-family-base;
   letter-spacing: 0.11em;
 }
+@mixin text-footer {
+    font-family: 'Noir Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 197.5%;
+  
+}
+    

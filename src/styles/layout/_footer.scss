@@ -97,6 +97,7 @@
   h3 {
     text-align: center;
   }
+
   a {
     color: #ffffff;
     text-decoration: none;
@@ -105,6 +106,7 @@
     line-height: 17px;
     text-align: left;
   }
+
   .footer_links {
     width: 149px;
     height: 35px;
@@ -118,7 +120,9 @@
     grid-column: 4/4;
     grid-row: 3/4;
     margin-top: -70px;
+
     display: grid;
+
   }
   .footer_links-text {
     font-weight: 400;
