@@ -1,8 +1,14 @@
 <section class="donation">
     <h2 class="donation-header">пожертвовать</h2>
-    <p class="donation-text">Мы будем рады любой сумме. Здорово, если она будет регулярной — это залог стабильности нашего фонда и возможность планировать работу, чтобы успеть помочь каждому.
-    </p>
-    <img src="/src/images/donation-cards/image14.png" alt="как оформить пожертвование">
+    <div class="donation-content">
+        <p class="donation-text">Мы будем рады любой сумме. Здорово, если она будет регулярной — это залог стабильности нашего фонда и возможность планировать работу, чтобы успеть помочь каждому.
+        </p>
+        <picture aria-colcount="donation-image">
+            <source media="(max-width: 767px)" srcset="/src/images/donation-cards/image15.png">
+            <img src="/src/images/donation-cards/image14.png" alt="как оформить пожертвование">
+        </picture>
+    </div>
+    
      
     {% include "donation-cards.html" %}
 
