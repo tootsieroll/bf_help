@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: auto;
+    height: 98px;
+    align-items: center;
+    padding: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: #6E6E6E;
+}
+.header-option__number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-option__mail {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.header-option__button1-0 {
+    width: 174px;
+    border: none;
+    border-radius: 10px;
+    background: #98C9B6;
+    padding: 8px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.header-option__button2-0 {
+    width: 174px;
+    border: none;
+    border-radius: 10px;
+    background: #C7796D;
+    padding: 8px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #FFFFFF;
+}

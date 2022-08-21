@@ -1,0 +1,187 @@
+/*контакты*/
+
+.contacts {
+    background-color: $text-inverse;
+  }
+  
+  .wrapper {
+    max-width: 1323px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    @include h2;
+  }
+  
+  .contacts-cards {
+  
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    position: relative;
+    max-width: 1369px;
+    height: 541px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid $text-inverse;
+    box-shadow: 0px 4px 58px 11px rgba(23, 53, 87, 0.17);
+    border-radius: 17px;
+  }
+  
+  p1 {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: nowrap;
+    max-width: 675px;
+    font-family: 'Noir Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 57px;
+    line-height: 68px;
+    letter-spacing: 0.095em;
+    color:$text;
+  }
+  
+  p2 {
+    display: inline-block;
+    margin-bottom: 50px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'Noir Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 68px;
+    letter-spacing: 0.095em;
+  
+    background: linear-gradient(111.56deg, #2C5E5B 18.82%, #415C7A 64.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  p3 {
+    display: inline-block;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    font-family: 'Noir Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 57px;
+    line-height: 68px;
+    letter-spacing: 0.11em;
+    background: linear-gradient(111.56deg, #2C5E5B 18.82%, #415C7A 64.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .contacts-cards__text {
+    display: inline;
+  }
+  
+  .contacts-cards__mail {
+    margin-top: 30px;
+  }
+  
+  .contacts-cards__href {
+    margin-left: 10px;
+    font-family: 'Noir Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 104%;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  @media screen and (max-width : 591px) {
+    .contacts {
+      background-color: $text-inverse;
+    }
+  
+    .wrapper {
+      max-width: 470px;
+      margin: 0 auto;
+    }
+  
+    h2 {
+  
+      display: inline-block;
+      margin: 20px;
+      font-family: 'Noir Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 117.5%;
+      text-align: center;
+      letter-spacing: 0.085em;
+      text-transform: uppercase;
+  
+      color:$text;
+    }
+  
+    .contacts-cards {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+  
+      max-width: 469px;
+      height: 699px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid $text-inverse;
+      box-shadow: 0px 4px 58px 11px rgba(23, 53, 87, 0.17);
+      border-radius: 17px;
+    }
+  
+    .contacts-cards__imag {
+      grid-row: 2/3;
+    }
+  
+    .contacts-cards__text {
+      grid-row: 1/2;
+  
+    }
+  
+    p1 {
+      display: inline-block;
+      margin: 20px;
+      font-family: 'Noir Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 37px;
+      line-height: 44px;
+      text-align: center;
+      letter-spacing: 0.075em;
+      color:$text;
+    }
+  
+    p2 {
+      display: inline-block;
+      margin: 20px;
+      align-items: center;
+      font-family: 'Noir Pro';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 37px;
+      line-height: 44px;
+      text-align: center;
+      letter-spacing: 0.095em;
+      background: linear-gradient(111.56deg, #2C5E5B 18.82%, #415C7A 64.16%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  
+    p3 {
+      display: none;
+    }
+  
+    .contacts-cards__text {
+      margin: 0 auto;
+    }
