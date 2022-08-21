@@ -2,24 +2,22 @@ $font-family-base: 'NoirPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-header: 'Antapani', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 @mixin h1 {
-  font: 800 130px/120px $font-family-header;
+  font-family: $font-family-header;
+  @include font('extraBold', 130px, 120px);
   letter-spacing: 0.04em;
 }
 @mixin h2 {
-  font: 300 57px/68px $font-family-base;
+  font-family: $font-family-base;
+  @include font('light', 57px, 68px);
   letter-spacing: 0.11em;
   text-transform: uppercase;
 }
 @mixin body {
-  font: 300 22px/26px $font-family-base;
+  font-family: $font-family-base;
+  @include font('light', 22px, 26px);
   letter-spacing: 0.11em;
 }
 @mixin text-footer {
-    font-family: 'Noir Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 197.5%;
-  
+  font-family: $font-family-base;
+  @include font('light', 14px, 16px);
 }
-    

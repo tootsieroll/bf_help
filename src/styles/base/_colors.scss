@@ -1,74 +1,81 @@
-$dark-green: #2C5E5B;
-$dark-blue: #415C7A;
+$dark-green: #2c5e5b;
+$dark-blue: #415c7a;
 $shadow: transparentize(#173557, 0.4);
 
 $text: #000000;
-$text-inverse: #FFFFFF;
+$text-inverse: #ffffff;
 
-$bg: #FFFFFF;
-
+$bg: #ffffff;
 
 @mixin style-1 {
-  background: linear-gradient(90deg, #AEC2F9 -34.39%, #A5E1FF 145.2%);
+  background: linear-gradient(90deg, #aec2f9 -34.39%, #a5e1ff 145.2%);
 }
 @mixin style-2 {
-  background: linear-gradient(90deg, #AEC2F9 -34.39%, #FF8B9B 145.2%);
+  background: linear-gradient(90deg, #aec2f9 -34.39%, #ff8b9b 145.2%);
 }
 @mixin style-3 {
-  background: linear-gradient(90.06deg, #FF8199 0.01%, #FFE3A5 87.06%);
+  background: linear-gradient(90.06deg, #ff8199 0.01%, #ffe3a5 87.06%);
 }
 @mixin style-linear {
-  background: linear-gradient(90deg, #FFFAE1 0%, #95D8C8 130.79%);
+  background: linear-gradient(90deg, #fffae1 0%, #95d8c8 130.79%);
 }
 @mixin style-4 {
-  background: linear-gradient(29.63deg, #B5DCCC -41.86%, rgba(255, 249, 185, 0) 105.48%);
+  background: linear-gradient(
+    29.63deg,
+    #b5dccc -41.86%,
+    rgba(255, 249, 185, 0) 105.48%
+  );
 }
 @mixin style-5 {
-  background: linear-gradient(90deg, #FFA18C 0%, #FFFFFF 94.69%);
+  background: linear-gradient(90deg, #ffa18c 0%, #ffffff 94.69%);
 }
 @mixin style-6 {
-  background: linear-gradient(90deg, #FFE7AA 0%, #FFFFFF 95.37%);
+  background: linear-gradient(90deg, #ffe7aa 0%, #ffffff 95.37%);
 }
 @mixin style-7 {
-  background: linear-gradient(111.56deg, #2C5E5B 18.82%, #415C7A 64.16%);
+  background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
 }
 @mixin style-8 {
-  background: linear-gradient(43.59deg, #FFF9B9 -22.52%, #FFBFDA 163.03%);
+  background: linear-gradient(43.59deg, #fff9b9 -22.52%, #ffbfda 163.03%);
 }
 @mixin style-9 {
-  background: linear-gradient(90deg, #B0E8F4 0%, #A5E1FF 79.09%);
+  background: linear-gradient(90deg, #b0e8f4 0%, #a5e1ff 79.09%);
 }
 @mixin style-ozh {
-  background: linear-gradient(90deg, #FEC28D 0%, #FFF9B9 130.79%);
+  background: linear-gradient(90deg, #fec28d 0%, #fff9b9 130.79%);
 }
 @mixin style-by {
-  background: linear-gradient(90deg, #9FCBFF 0%, #FFF7A5 130.79%);
+  background: linear-gradient(90deg, #9fcbff 0%, #fff7a5 130.79%);
 }
 @mixin style-bw {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.53) 0%, rgba(0, 0, 0, 0) 13.64%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.53) 0%,
+    rgba(0, 0, 0, 0) 13.64%
+  );
 }
 
 @mixin effect-green-links {
-  background: #D9D9D9;
+  background: #d9d9d9;
   box-shadow: 0 0 7px rgba(44, 94, 91, 0.85);
 }
 @mixin effect-blue {
-  background: #D9D9D9;
+  background: #d9d9d9;
   box-shadow: 0 0 32px rgba(203, 243, 255, 0.55);
 }
 @mixin effect-orange {
-  background: #D9D9D9;
+  background: #d9d9d9;
   box-shadow: 0 0 26px rgba(255, 223, 185, 0.71);
 }
 @mixin effect-biruza {
-  background: #D9D9D9;
+  background: #d9d9d9;
   box-shadow: 0 0 26px rgba(120, 191, 157, 0.65);
 }
 @mixin effect-dark-blue {
-  background: #D9D9D9;
+  background: #d9d9d9;
   box-shadow: 0 4px 58px 11px rgba(23, 53, 87, 0.6);
 }
 @mixin effect-gray {
-  background: #D9D9D9;
+  background: #d9d9d9;
   box-shadow: -5px 5px 25px rgba(107, 121, 131, 0.69);
 }

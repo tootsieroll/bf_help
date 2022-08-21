@@ -1,54 +1,54 @@
 .donation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background: linear-gradient($dark-green, $dark-blue);
-    padding: 100px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: linear-gradient($dark-green, $dark-blue);
+  padding: 100px 0 0 0;
 }
 .donation-header {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin-bottom: 20px;
-    @include h2;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  @include h2;
 }
 .donation-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 945px;
-    height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 945px;
+  height: auto;
 }
-.donation-image{
-    max-width: 100%;
-    height: auto
+.donation-image {
+  max-width: 100%;
+  height: auto;
 }
 .donation-text {
-    @include body;
-    margin-bottom: 20px;
+  @include body;
+  margin-bottom: 20px;
 }
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 767px) {
-    .donation-header {
-        font-weight: 300;
-        font-size: 40px;
-        line-height: 48px;
-    }
-    .donation-text {
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 21.6px;
-        margin: 0 60px 20px 60px;
-    }
+  .donation-header {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .donation-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21.6px;
+    margin: 0 60px 20px 60px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .donation-content {
-        margin: 0 100px 0 100px;
-    }
+  .donation-content {
+    margin: 0 100px 0 100px;
+  }
 }
