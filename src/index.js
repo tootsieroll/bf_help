@@ -38,4 +38,26 @@ $(document).ready(function () {
             }
         ]
     });
+    $('#partners-slider').slick({
+        autoplay: true,
+        prevArrow: '#partners-slider-prev',
+        nextArrow: '#partners-slider-next',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
 });
