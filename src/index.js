@@ -15,4 +15,32 @@ $(document).ready(function () {
         nextArrow: '#donation-slider-next',
         fade: true,
     });
+    $('#reports-slider').slick({
+        autoplay: true,
+        prevArrow: '#reports-slider-prev',
+        nextArrow: '#reports-slider-next',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });
