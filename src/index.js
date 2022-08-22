@@ -22,21 +22,16 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
+        centerMode: true,
         responsive: [
             {
                 breakpoint: 1441,
                 settings: {
-                    slidesToShow: 4
+                    slidesToShow: 3
                 }
             },
             {
                 breakpoint: 768,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 480,
                 settings: {
                     slidesToShow: 1
                 }

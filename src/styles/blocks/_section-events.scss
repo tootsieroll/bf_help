@@ -1,6 +1,7 @@
 .reports {
   background-color: white;
   padding-top: rem(100px);
+  padding-bottom: rem(30px);
 
   &__title {
     text-align: center;
@@ -30,9 +31,10 @@
       transform: rotate(180deg);
     }
     &-slide {
-      display: flex;
+      display: inline-flex!important;
       align-items: center;
       justify-content: center;
+      padding: rem(0 30px);
     }
     .slider-button {
       position: absolute;
@@ -59,6 +61,7 @@
   .report {
     position: relative;
     border-radius: rem(17px);
+    -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
     width: rem(471px);
     height: rem(611px);
     margin: 0 auto;
@@ -85,19 +88,24 @@
       right: 0;
       padding: rem(24px);
       height: rem(150px);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
       h3 {
         @include font('light', 36px, 43px);
         letter-spacing: 0.11em;
       }
       p {
         @include body;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        height: rem(54px);
         margin: rem(10px 0);
+        height: rem(54px);
+        overflow: hidden;
       }
+    }
+    &__image {
+      max-width: none;
+      height: 100%;
     }
   }
 
