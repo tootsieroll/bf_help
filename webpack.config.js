@@ -13,7 +13,7 @@ module.exports = {
     devServer: {
         /** Будет запускать сервер на localhost:8080 в этой папке*/
         static : {
-            directory : path.join(__dirname, "./dist")
+            directory : path.join(__dirname, "./docs")
         },
         historyApiFallback: true,
         open: true,
@@ -23,7 +23,7 @@ module.exports = {
     },
     watch: true,
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './docs'),
         filename: '[name].bundle.js'
     },
     module: {
