@@ -12,6 +12,15 @@
     height: rem(441px);
     font-family: $font-family-base;
     @include font('light', 14px, 16px);
+    @include max-screen(1130px) {
+      background-color: $dark-green;
+      padding-top: rem(41px);
+      height: rem(292px);
+      .wrapper {
+        border-top: 1px solid white;
+        padding-top: rem(26px);
+      }
+    }
   }
   &__bottom {
     background-color: white;
@@ -36,12 +45,18 @@
         margin-left: rem(7px);
       }
     }
+    @include max-screen(1130px) {
+      display: none;
+    }
   }
 
   &__title {
     font-family: $font-family-roboto;
     @include font('regular', 15px, 16px);
     margin-bottom: rem(10px);
+    @include max-screen(1130px) {
+      display: none;
+    }
   }
   &__logo {
     width: rem(298px);
@@ -50,6 +65,9 @@
     img {
       max-width: 100%;
     }
+    @include max-screen(1130px) {
+      display: none;
+    }
   }
   &__row {
     display: grid;
@@ -57,23 +75,61 @@
     grid-template-columns: max-content max-content auto;
     grid-column-gap: rem(50px);
     margin-bottom: rem(25px);
+    @include max-screen(1130px) {
+      grid-template-columns: max-content auto;
+    }
   }
   &__contact-info {
     display: grid;
     grid-column-gap: rem(80px);
     grid-template-columns: repeat(2, max-content);
+    @include max-screen(767px) {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-gap: rem(32px);
+    }
     &__address {
       text-transform: uppercase;
       white-space: nowrap;
     }
     &__contacts {
       margin-top: rem(17px);
+      @include max-screen(767px) {
+        a {
+          display: inline-block;
+          padding-left: rem(22px);
+          line-height: rem(22px);
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+        a[href*='tel']:before {
+          width: rem(19px);
+          height: rem(19px);
+          background: url('/src/images/footer/phone-1.png') no-repeat
+            center/contain;
+        }
+        a[href*='mailto']:before {
+          width: rem(17px);
+          height: rem(17px);
+          background: url('/src/images/footer/letter.png') no-repeat
+            center/contain;
+          top: rem(1px);
+        }
+      }
     }
   }
   &__nav {
     display: grid;
     grid-column-gap: rem(50px);
     grid-template-columns: repeat(2, max-content);
+    @include max-screen(1130px) {
+      display: none;
+    }
     ul li {
       margin-bottom: rem(12px);
     }
@@ -87,14 +143,24 @@
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: rem(30px);
+    @include max-screen(920px) {
+      flex-flow: column nowrap;
+      margin: 0;
+    }
     button:first-child {
       margin-right: rem(30px);
+      @include max-screen(920px) {
+        margin: rem(0 0 22px 0);
+      }
     }
   }
   &__write-us {
     margin-right: rem(20px);
     padding-right: rem(32px);
     position: relative;
+    @include max-screen(920px) {
+      display: none;
+    }
     &:after {
       content: '';
       display: block;
@@ -107,6 +173,9 @@
     }
   }
   &__data {
+    @include max-screen(767px) {
+      display: none;
+    }
     > div {
       display: flex;
       flex-flow: row nowrap;
@@ -115,7 +184,7 @@
       margin-right: rem(4px);
     }
     &-data {
-      color: #C2C2C2;
+      color: #c2c2c2;
     }
   }
 }

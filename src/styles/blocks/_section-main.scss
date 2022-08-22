@@ -3,13 +3,24 @@
   height: rem(1000px);
   color: $text-inverse;
   z-index: 1;
+  @include max-screen(1130px) {
+    height: auto;
+  }
 
   &__container {
     display: grid;
     height: 100%;
     width: 100%;
     grid-template-columns: 53% 47%;
-    background: linear-gradient(180deg, #2C5E5B 0%, #415C7A 100%);
+    background: linear-gradient(180deg, #2c5e5b 0%, #415c7a 100%);
+    @include max-screen(1280px) {
+      grid-template-columns: 47% 53%;
+    }
+    @include max-screen(1130px) {
+      display: block;
+      padding-top: rem(160px);
+      position: relative;
+    }
 
     &-pic {
       display: flex;
@@ -17,9 +28,24 @@
       justify-content: flex-start;
       overflow: hidden;
       width: 100%;
-      img {
+      position: relative;
+      z-index: 2;
+      @include max-screen(1130px) {
+        height: rem(411px);
+        justify-content: center;
+      }
+      img,
+      picture {
         max-width: none;
         height: 100%;
+        @include max-screen(727px) {
+          width: 100%;
+          height: auto;
+        }
+        @include max-screen(511px) {
+          width: auto;
+          height: 100%;
+        }
       }
     }
 
@@ -27,27 +53,61 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      @include max-screen(1130px) {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-column-gap: rem(97px);
+      }
+      @include max-screen(767px) {
+        grid-column-gap: rem(47px);
+      }
+      @include max-screen(550px) {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: rem(20px);
+      }
     }
 
     &-content {
-      position: relative;
       padding: rem(160px 124px 190px 110px);
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
       justify-content: space-between;
+      @include max-screen(1130px) {
+        padding: rem(60px 60px 93px);
+        max-width: rem(957px);
+        margin: 0 auto;
+        box-sizing: content-box;
+        height: rem(265px);
+      }
+      @include max-screen(550px) {
+        padding: rem(60px);
+        height: auto;
+      }
       &__title {
         margin-bottom: rem(65px);
+        @include max-screen(1130px) {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: rem(126px);
+          text-align: center;
+          z-index: 10;
+        }
       }
       &__text {
         margin-bottom: rem(26px);
         @include body;
+        @include max-screen(1130px) {
+          margin-bottom: rem(20px);
+        }
       }
     }
   }
 
   &__button {
-    display: inline-block;
+    display: block;
     text-align: center;
     color: $text;
     text-transform: uppercase;
@@ -64,20 +124,29 @@
     cursor: pointer;
     transition: 590ms ease-out;
 
+    @include max-screen(1130px) {
+      height: rem(55px);
+      width: 100%;
+      @include font('light', 18px, 58px);
+      min-width: rem(173px);
+      padding: rem(0 10px);
+    }
+
     &:hover {
       text-decoration: none;
     }
 
     &--light {
-      background: linear-gradient(90deg, #FEC28D 0%, #FFF9B9 130.79%);
+      background: linear-gradient(90deg, #fec28d 0%, #fff9b9 130.79%);
       &:hover,
       &:active {
         @include effect-orange;
       }
     }
     &--dark {
-      background: linear-gradient(90deg, #9FCBFF 0%, #FFF7A5 130.79%);
-      box-shadow: -1px 1px 29px rgba(0, 0, 0, 0.25), 1px -1px 31px rgba(255, 255, 255, 0.3);
+      background: linear-gradient(90deg, #9fcbff 0%, #fff7a5 130.79%);
+      box-shadow: -1px 1px 29px rgba(0, 0, 0, 0.25),
+        1px -1px 31px rgba(255, 255, 255, 0.3);
       &:hover,
       &:active {
         @include effect-blue;
@@ -93,37 +162,8 @@
     bottom: rem(75px);
     left: 50%;
     transform: translateX(-50%);
-    background: url("/src/images/header-main/arrow.svg") no-repeat center/contain;
+    background: url('/src/images/header-main/arrow.svg') no-repeat
+      center/contain;
     z-index: 10;
   }
 }
-//@media screen and (min-width: 768px) and (max-width: 1023px) {
-//  .nav {
-//    display: flex;
-//    position: absolute;
-//    font-family: 'IBM Plex Sans', sans-serif;
-//    font-size: 16px;
-//    font-weight: 400;
-//    font-style: normal;
-//    letter-spacing: 0.015em;
-//    color: #ffffff;
-//  }
-//  .nav {
-//    display: none;
-//  }
-//}
-//@media screen and (max-width: 767px) {
-//  .nav {
-//    display: flex;
-//    position: absolute;
-//    font-family: 'IBM Plex Sans', sans-serif;
-//    font-size: 16px;
-//    font-weight: 400;
-//    font-style: normal;
-//    letter-spacing: 0.015em;
-//    color: #ffffff;
-//  }
-//  .nav {
-//    display: none;
-//  }
-//}

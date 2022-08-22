@@ -23,14 +23,43 @@
     </div>
     <div class="header-option">
       <div class="header-option__search">
-        <a href="#"><img src="images/search.svg" alt="search form" /></a>
+        <a href="#"
+          ><img src="images/search.svg" alt="search form"
+        /></a>
       </div>
       <div class="header-option__profile">
-        <a href="#"><img src="images/profile.svg" alt="my profile" /></a>
+        <a href="#"
+          ><img src="images/profile.svg" alt="my profile"
+        /></a>
       </div>
       <div class="header-option__buttons">
         <button class="button button--green">НУЖНА ПОМОЩЬ</button>
         <button class="button button--red">ПОМОЧЬ СЕЙЧАС</button>
+      </div>
+    </div>
+    <div class="header-mobile header-mobile--logo">
+      <img src="images/logo_header.png" alt="logo" />
+    </div>
+    <div class="header-mobile">
+      <div class="header-mobile__phone">
+        <a href="tel:88124559924">
+          <img src="images/call3.png" alt="phone" />
+        </a>
+      </div>
+      <div class="header-mobile__mail">
+        <a href="mailto:help@bf-pomosch.ru">
+          <img src="images/letter1.png" alt="mail" />
+        </a>
+      </div>
+      <div class="header-mobile__profile">
+        <a href="#">
+          <img src="images/profile1.png" alt="profile" />
+        </a>
+      </div>
+      <div id="open-nav" class="header-mobile__burger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </div>
@@ -69,26 +98,40 @@
 
   <div class="main__container">
     <div class="main__container-pic">
-      <img
-        class="main__container-pic__img"
-        srcset="images/main-pic@2x.jpg 2x, images/main-pic.jpg 1x"
-        alt="main"
-      />
+      <picture aria-colcount="donation-image">
+        <source
+          media="(max-width: 727px)"
+          srcset="
+            images/main-pic-xs@2x.jpg 2x,
+            images/main-pic-xs.jpg    1x
+          "
+        />
+        <source
+          media="(max-width: 1130px)"
+          srcset="
+            images/main-pic-small@2x.jpg 2x,
+            images/main-pic-small.jpg    1x
+          "
+        />
+        <img
+          srcset="
+            images/main-pic@2x.jpg 2x,
+            images/main-pic.jpg    1x
+          "
+          alt="main"
+        />
+      </picture>
     </div>
     <div class="main__container-content">
       <div>
-        <h1 class="main__container-content__title">
-          Большая
-          <br />
-          помощь
-        </h1>
+        <h1 class="main__container-content__title">Большая помощь</h1>
         <p class="main__container-content__text">
-          Большая помощь - это долгосрочный системный проект
-          по поддержке медицинских учреждений.
+          Большая помощь - это долгосрочный системный проект по поддержке
+          медицинских учреждений.
         </p>
         <p class="main__container-content__text">
-          Его цель - улучшение качества оказания медицинской
-          помощи пациентам больниц и хосписов.
+          Его цель - улучшение качества оказания медицинской помощи пациентам
+          больниц и хосписов.
         </p>
       </div>
       <div class="main__container-buttons">
@@ -97,7 +140,6 @@
         <!-- Якорь на блок с анкетой-->
         <a href="#" class="main__button main__button--dark">Стать участником</a>
       </div>
-<!--      <a class="scroll-arrow"></a>-->
     </div>
   </div>
 </section>
@@ -138,9 +180,9 @@
           target="_blank"
           href="https://www.gov.spb.ru/gov/terr/krasnogvard/podvedomstvennye-uchrezhdeniya/sankt-peterburgskoe-gosudarstvennoe-kazennoe-uchrezhdenie-zdravoohrane/"
         >
-          Санкт-Петербургское государственное казенное
-          учреждение здравоохранения «Психоневрологический
-          дом ребенка № 8 Красногвардейского района»
+          Санкт-Петербургское государственное казенное учреждение
+          здравоохранения «Психоневрологический дом ребенка № 8
+          Красногвардейского района»
         </a>
       </div>
       <img
@@ -157,17 +199,16 @@
       />
       <div class="member__text">
         <a href="https://zhiznplus31.ru/" target="_blank">
-          Автономная некоммерческая организация Центр
-          паллиативной медицинской помощи «Изумрудный город»
+          Автономная некоммерческая организация Центр паллиативной медицинской
+          помощи «Изумрудный город»
         </a>
       </div>
     </div>
     <div class="member member--three">
       <div class="member__text">
         <a href="http://gerdoctor.ru" target="_blank">
-          Санкт-Петербургское государственное бюджетное
-          учреждение здравоохранения «Городской гериатрический
-          медико-социальный центр»
+          Санкт-Петербургское государственное бюджетное учреждение
+          здравоохранения «Городской гериатрический медико-социальный центр»
         </a>
       </div>
       <img
@@ -206,7 +247,10 @@
 
   <div class="donation-cards">
   <div class="donation-cards_slider">
-    <button class="slider-button slider-button--prev" id="donation-slider-prev"></button>
+    <button
+      class="slider-button slider-button--prev"
+      id="donation-slider-prev"
+    ></button>
     <div id="donation-slider">
       <div class="donation-cards_slider__item">
         <div class="donation__card">
@@ -224,10 +268,7 @@
               1200р/год=
             </h3>
             <p class="donation__card-text_parag">
-              1 комплект <br />
-              перевязочного <br />
-              материала или 1 <br />
-              аптечка скорой помощи
+              1 комплект перевязочного материала или 1 аптечка скорой помощи
             </p>
           </div>
         </div>
@@ -273,7 +314,10 @@
       <div class="donation-cards_slider__item">
         <div class="donation__card">
           <div class="donation__card-image">
-            <img src="images/2AdobeStock.png" alt="процедура" />
+            <img
+              src="images/2AdobeStock.png"
+              alt="процедура"
+            />
           </div>
           <div class="donation__card-text">
             <h3>
@@ -288,7 +332,10 @@
         </div>
       </div>
     </div>
-    <button class="slider-button slider-button--next" id="donation-slider-next"></button>
+    <button
+      class="slider-button slider-button--next"
+      id="donation-slider-next"
+    ></button>
   </div>
 </div>
 
@@ -357,9 +404,9 @@
       <div class="reports__slider-slide">
         <div class="report">
           <img
-                  class="report__image"
-                  src="images/girl.png"
-                  alt="girl"
+            class="report__image"
+            src="images/girl.png"
+            alt="girl"
           />
           <div class="report__text">
             <h3>Новости по проекту</h3>
@@ -370,9 +417,9 @@
       <div class="reports__slider-slide">
         <div class="report">
           <img
-                  class="report__image"
-                  src="images/woman.jpg"
-                  alt="girl"
+            class="report__image"
+            src="images/woman.jpg"
+            alt="girl"
           />
           <div class="report__text">
             <h3>Новости по проекту</h3>
@@ -383,9 +430,9 @@
       <div class="reports__slider-slide">
         <div class="report">
           <img
-                  class="report__image"
-                  src="images/boy.jpg"
-                  alt="girl"
+            class="report__image"
+            src="images/boy.jpg"
+            alt="girl"
           />
           <div class="report__text">
             <h3>Новости по проекту</h3>
@@ -396,9 +443,9 @@
       <div class="reports__slider-slide">
         <div class="report">
           <img
-                  class="report__image"
-                  src="images/girlbook.png"
-                  alt="girl"
+            class="report__image"
+            src="images/girlbook.png"
+            alt="girl"
           />
           <div class="report__text">
             <h3>Новости по проекту</h3>
@@ -421,12 +468,14 @@
       <label class="application__form-label" for="organization">
         Название организации
       </label>
-      <input id="organization" class="input application__form-input" type="text" />
+      <input
+        id="organization"
+        class="input application__form-input"
+        type="text"
+      />
     </div>
     <div class="application__form-group">
-      <label for="address" class="application__form-label">
-        Адрес
-      </label>
+      <label for="address" class="application__form-label"> Адрес </label>
       <input id="address" class="input application__form-input" type="text" />
     </div>
     <div class="application__form-group">
@@ -443,20 +492,12 @@
     </div>
     <div class="application__form-row">
       <div class="application__form-group">
-        <label for="mail" class="application__form-label">
-          Почта
-        </label>
+        <label for="mail" class="application__form-label"> Почта </label>
         <input id="mail" class="input application__form-input" type="email" />
       </div>
       <div class="application__form-group">
-        <label for="phone" class="application__form-label">
-          Телефон
-        </label>
-        <input
-          id="phone"
-          class="input application__form-input"
-          type="text"
-        />
+        <label for="phone" class="application__form-label"> Телефон </label>
+        <input id="phone" class="input application__form-input" type="text" />
       </div>
     </div>
     <div class="application__form-group">
@@ -477,13 +518,19 @@
       <a href="#" class="application__button application__button--about">
         ПОЛОЖЕНИЕ ПРОЕКТА
       </a>
-      <label for="license" class="application__button application__button--loading">
+      <label
+        for="license"
+        class="application__button application__button--loading"
+      >
         Перетащите сюда файлы или нажмите, чтобы загрузить лицензию
-        <input type="file" id="license"/>
+        <input type="file" id="license" />
       </label>
     </div>
     <div class="application__form-submit">
-      <button class="application__button application__button--submit" type="submit">
+      <button
+        class="application__button application__button--submit"
+        type="submit"
+      >
         ОТПРАВИТЬ ЗАЯВКУ
       </button>
     </div>
@@ -505,17 +552,30 @@
       <div class="contacts__card-data">
         <h4 class="contacts__card-data__title">Данила Ткачёв</h4>
         <div class="contacts__card-data__phone">
-          <img class="contacts__card-data__icon" src="images/phone.svg" alt="phone" />
-          <a href="tel:+79319585023" class="contacts__card-data__link">+7 931 958 50 23</a>
+          <img
+            class="contacts__card-data__icon"
+            src="images/phone.svg"
+            alt="phone"
+          />
+          <a href="tel:+79319585023" class="contacts__card-data__link"
+            >+7 931 958 50 23</a
+          >
         </div>
         <div class="contacts__card-data__email">
-          <img class="contacts__card-data__icon" src="images/email.svg" alt="letter" />
-          <a class="contacts__card-data__link" href="mailto:tkachev@bf-pomosch.ru">tkachev@bf-pomosch.ru</a>
+          <img
+            class="contacts__card-data__icon"
+            src="images/email.svg"
+            alt="letter"
+          />
+          <a
+            class="contacts__card-data__link"
+            href="mailto:tkachev@bf-pomosch.ru"
+            >tkachev@bf-pomosch.ru</a
+          >
         </div>
       </div>
     </div>
   </div>
-
 </section>
 
     <section class="partners">
@@ -569,15 +629,15 @@
         <div class="footer__contact-info">
           <div class="footer__contact-info__address">
             Г. САНКТ-ПЕТЕРБУРГ
-            <br/>
+            <br />
             ТОРФЯНАЯ ДОРОГА, Д. 7,
-            <br/>
+            <br />
             ЛИТ. Ф, ЧАСТЬ
-            <br/>
+            <br />
             ПОМЕЩЕНИЯ № 13-Н,
-            <br/>
+            <br />
             ЧАСТЬ КАБИНЕТА № 21,
-            <br/>
+            <br />
             ОФИС 721
           </div>
           <div class="footer__contact-info__contacts">
@@ -645,7 +705,8 @@
   <div class="footer__bottom">
     <div class="wrapper">
       <div class="footer__bottom__text">
-        БЛАГОТВОРИТЕЛЬНЫЙ ФОНД «ПОМОЩЬ» ИСПОЛЬЗУЕТ САЙТ BF-POMOSCH.RU ДЛЯ СБОРА НЕ ОБЛАГАЕМЫХ НАЛОГОМ ПОЖЕРТВОВАНИЙ. ВОЗРАСТНОЕ ОГРАНИЧЕНИЕ 0+.
+        БЛАГОТВОРИТЕЛЬНЫЙ ФОНД «ПОМОЩЬ» ИСПОЛЬЗУЕТ САЙТ BF-POMOSCH.RU ДЛЯ СБОРА
+        НЕ ОБЛАГАЕМЫХ НАЛОГОМ ПОЖЕРТВОВАНИЙ. ВОЗРАСТНОЕ ОГРАНИЧЕНИЕ 0+.
       </div>
       <div class="footer__bottom__nav">
         <ul class="panel-social__list">

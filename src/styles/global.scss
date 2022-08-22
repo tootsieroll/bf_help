@@ -3,8 +3,17 @@
 
 :root {
   font-size: 16px;
+  @include max-screen(1600px) {
+    font-size: 14px;
+  }
   @include max-screen(1440px) {
     font-size: 12px;
+  }
+  @include max-screen(1130px) {
+    font-size: 16px;
+  }
+  @include max-screen(550px) {
+    font-size: 14px;
   }
 }
 html {
@@ -50,6 +59,9 @@ h2 {
 
 p {
   margin: rem(16px 0);
+  @include max-screen(1130px) {
+    margin: rem(10px 0);
+  }
 }
 
 a {

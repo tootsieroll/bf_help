@@ -1,12 +1,18 @@
 .donation {
   color: $text-inverse;
-  background: linear-gradient($dark-green, $dark-blue);
   padding-top: rem(100px);
+  @include style-7;
+  @include max-screen(1130px) {
+    padding-top: rem(75px);
+  }
 
   &-header {
     text-align: center;
     margin-bottom: rem(35px);
     @include h2;
+    @include max-screen(1130px) {
+      margin-bottom: rem(46px);
+    }
   }
   &-content {
     margin: 0 auto;
@@ -16,7 +22,8 @@
       padding: 0;
     }
   }
-  &-image, img {
+  &-image,
+  img {
     max-width: 100%;
     height: auto;
   }
@@ -24,7 +31,8 @@
     @include body;
     margin-bottom: rem(26px);
     @include max-screen(767px) {
-      padding: rem(10px 60px 100px);
+      padding: rem(10px 60px 75px);
+      margin: 0;
     }
   }
   &-form {

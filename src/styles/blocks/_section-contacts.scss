@@ -19,6 +19,15 @@
     display: grid;
     grid-template-columns: rem(524px) auto;
     grid-column-gap: rem(20px);
+    @include max-screen(1130px) {
+      width: rem(469px);
+      height: rem(699px);
+      padding: rem(22px 0 28px);
+      grid-template-columns: 100%;
+      grid-template-rows: auto rem(393px);
+      align-items: center;
+      justify-items: center;
+    }
     &-image {
       width: rem(524px);
       height: rem(458px);
@@ -27,20 +36,34 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include max-screen(1130px) {
+        order: 2;
+        width: rem(416px);
+        height: rem(393px);
+      }
       img {
         max-width: none;
-        min-width: 100%;
+        width: 100%;
         min-height: 100%;
+        aspect-ratio: 525 / 458;
       }
     }
     &-content {
-
+      @include max-screen(1130px) {
+        order: 1;
+      }
     }
     &-title {
       @include h2;
       text-transform: none;
       margin-top: rem(26px);
       margin-bottom: rem(14px);
+      @include max-screen(1130px) {
+        @include font('light', 37px, 44px);
+        letter-spacing: 0.075em;
+        margin: 0;
+        text-align: center;
+      }
       strong {
         font-weight: 600;
         @include style-7;
@@ -48,6 +71,9 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+        @include max-screen(1130px) {
+          letter-spacing: 0.095em;
+        }
       }
     }
     &-data {
@@ -61,14 +87,24 @@
         background-clip: text;
         text-fill-color: transparent;
         margin-bottom: rem(26px);
+        @include max-screen(1130px) {
+          display: none;
+        }
       }
       &__phone {
         margin-bottom: rem(38px);
+        @include max-screen(1130px) {
+          margin-bottom: rem(26px);
+        }
       }
       &__phone,
       &__email {
         display: flex;
         align-items: center;
+        @include max-screen(1130px) {
+          text-align: center;
+          justify-content: center;
+        }
       }
       &__icon {
         width: rem(33px);

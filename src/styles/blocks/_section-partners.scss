@@ -12,16 +12,22 @@
     margin: 0 auto;
     padding: rem(0 78px);
     position: relative;
+    @include max-screen(1130px) {
+      padding: rem(0 20px);
+    }
     &-slide {
-      display: inline-flex!important;
+      display: inline-flex !important;
       padding: rem(0 25px);
+      @include max-screen(1130px) {
+        padding: rem(0 20px);
+      }
     }
   }
   .partner {
     width: rem(248px);
     height: rem(82px);
     border-radius: rem(16px);
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     margin: 0 auto;
   }
   .slider-button {
@@ -31,12 +37,18 @@
     top: 50%;
     transform-origin: 50% 50%;
     transform: translateY(-50%);
-    background: url("/src/images/section-partners/Vector8.svg") no-repeat center/cover;
+    background: url('/src/images/section-partners/Vector8.svg') no-repeat
+      center/contain;
     border: 0;
     box-shadow: none;
     outline: 0 none;
     z-index: 10;
     cursor: pointer;
+    padding: 0;
+    @include max-screen(1130px) {
+      width: rem(19px);
+      height: rem(52px);
+    }
     &--prev {
       left: 0;
       transform: translateY(-50%) rotate(180deg);

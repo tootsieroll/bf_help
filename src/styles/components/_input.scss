@@ -13,4 +13,8 @@
   font-family: $font-family-base;
   @include body;
   color: $text;
+  @include max-screen(1130px) {
+    height: rem(50px);
+    padding: rem(14px 20px);
+  }
 }

@@ -6,6 +6,9 @@
   &__title {
     text-align: center;
     margin-bottom: rem(60px);
+    @include max-screen(1130px) {
+      margin-bottom: 0;
+    }
   }
 
   &__list {
@@ -30,6 +33,12 @@
       }
     }
 
+    &__text {
+      @include max-screen(1130px) {
+        display: inline-block;
+      }
+    }
+
     &--one {
       max-width: rem(800px);
       .member__icon {
@@ -37,6 +46,10 @@
         height: rem(93px);
         margin-left: rem(27px);
         transform: rotate(-30deg);
+        @include max-screen(1130px) {
+          transform: none;
+          margin-left: rem(5px);
+        }
       }
     }
     &--two {
@@ -57,102 +70,10 @@
         width: rem(121px);
         height: rem(103px);
         margin-left: rem(20px);
+        @include max-screen(1130px) {
+          margin-left: rem(5px);
+        }
       }
     }
-  }
-}
-
-
-.members__one a,
-.members__two a,
-.members__three a {
-  text-decoration: none;
-  color: $text;
-}
-
-
-.members__one,
-.members__three {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.members__two {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 18px 0 0;
-  gap: 23px;
-}
-
-.members__two__text {
-  padding: 49px 0 0;
-}
-
-.members__one {
-  padding: 61px 0 0 0;
-  gap: 35px;
-}
-
-.members__three {
-  padding: 65px 0 0 0;
-  gap: 35px;
-}
-
-
-/* для планшетов*/
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .members {
-    background-size: 300px;
-  }
-
-  .members__one__icon {
-    transform: rotate(33deg);
-  }
-
-  .members__one,
-  .members__three {
-    margin: 0 100px 20px 40px;
-  }
-
-  .members__two {
-    margin: 0 95px 20px 145px;
-    gap: 20px;
-  }
-}
-
-/*для сматрфонов*/
-@media screen and (max-width: 767px) {
-  .members {
-    background-image: none;
-  }
-
-  .members__title {
-    font-size: 40px;
-    line-height: 48px;
-    margin: 2px;
-  }
-
-  .members__one__text,
-  .members__two__text,
-  .members__three__text {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .members__one__icon {
-    transform: rotate(33deg);
-  }
-
-  .members__one,
-  .members__two,
-  .members__three {
-    margin: 10px;
-    gap: 0;
-  }
-
-  .members__two {
-    gap: 20px;
   }
 }

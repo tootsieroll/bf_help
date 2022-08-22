@@ -4,6 +4,15 @@
   width: 100%;
   background-color: $bg-gray;
   color: $text-inverse;
+  @include max-screen(1130px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: rem(73px);
+    background-color: $dark-green;
+    z-index: 100;
+  }
   &__inner {
     position: relative;
     margin: 0 auto;
@@ -13,12 +22,18 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    @include max-screen(1130px) {
+      padding: rem(7px 35px 3px 40px);
+    }
   }
 
   &-option {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    @include max-screen(1130px) {
+      display: none;
+    }
     &--logo {
       width: rem(342px);
       height: rem(72px);
@@ -79,5 +94,86 @@
     width: 1px;
     height: rem(43px);
     background-color: white;
+  }
+  &-mobile {
+    @include min-screen(1131px) {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--logo {
+      width: rem(130px);
+      height: rem(63px);
+    }
+    &__phone {
+      width: rem(33px);
+      height: rem(33px);
+      margin-right: rem(10px);
+      margin-left: auto;
+    }
+    &__mail {
+      width: rem(24px);
+      height: rem(24px);
+      margin-right: rem(18px);
+    }
+    &__profile {
+      width: rem(29px);
+      height: rem(28px);
+      margin-right: rem(43px);
+    }
+    &__burger {
+      width: rem(39px);
+      height: rem(25px);
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      cursor: pointer;
+      position: relative;
+      .menu-opened & {
+        display: block;
+      }
+      span {
+        background-color: white;
+        height: rem(3px);
+        width: 100%;
+        display: inline-block;
+        transition: 300ms ease-in;
+        transform-origin: 50% 50%;
+        .menu-opened & {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          animation: animation1 300ms linear forwards;
+        }
+        &:nth-child(2) {
+          width: rem(33px);
+          .menu-opened & {
+            animation: animation2 300ms linear forwards;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animation1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+@keyframes animation2 {
+  from {
+    width: rem(33px);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    width: rem(39px);
+    transform: translate(-50%, -50%) rotate(-45deg);
   }
 }

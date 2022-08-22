@@ -7,22 +7,27 @@ $font-family-ibm: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-seri
   font-family: $font-family-header;
   @include font('extraBold', 130px, 120px);
   letter-spacing: 0.04em;
+  @include max-screen(1130px) {
+    @include font-size(42px, 48px);
+    letter-spacing: 0.035em;
+    text-shadow: rem(0 4px 4px) rgba(0, 0, 0, 0.25);
+  }
 }
 @mixin h2 {
   font-family: $font-family-base;
   @include font('light', 57px, 68px);
   letter-spacing: 0.11em;
   text-transform: uppercase;
-  @include max-screen(767px) {
-    @include font-size(40px, 48px)
+  @include max-screen(1130px) {
+    @include font-size(40px, 48px);
   }
 }
 @mixin body {
   font-family: $font-family-base;
   @include font('light', 22px, 26px);
   letter-spacing: 0.11em;
-  @include max-screen(767px) {
-    @include font-size(18px, 21px)
+  @include max-screen(1130px) {
+    @include font-size(18px, 21px);
   }
 }
 @mixin text-footer {
