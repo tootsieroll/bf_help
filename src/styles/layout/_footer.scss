@@ -4,6 +4,9 @@
     position: relative;
     margin: 0 auto;
     max-width: rem(1200px);
+    @include min-screen(1280px) {
+      max-width: 1200px;
+    }
   }
   &__top {
     background-color: $bg-gray;
@@ -21,6 +24,12 @@
         padding-top: rem(26px);
       }
     }
+    @include min-screen(1280px) {
+      padding: 32px 60px;
+      height: 441px;
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
   &__bottom {
     background-color: white;
@@ -30,6 +39,12 @@
     font-family: $font-family-base;
     @include font('light', 12px, 12px);
     text-transform: uppercase;
+    @include min-screen(1280px) {
+      height: 51px;
+      padding: 0 60px;
+      font-size: 12px;
+      line-height: 12px;
+    }
     .wrapper {
       display: flex;
       flex-flow: row nowrap;
@@ -43,6 +58,9 @@
       justify-content: flex-end;
       li {
         margin-left: rem(7px);
+        @include min-screen(1280px) {
+          margin-left: 7px;
+        }
       }
     }
     @include max-screen(1130px) {
@@ -57,6 +75,11 @@
     @include max-screen(1130px) {
       display: none;
     }
+    @include min-screen(1280px) {
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 16px;
+    }
   }
   &__logo {
     width: rem(298px);
@@ -68,6 +91,11 @@
     @include max-screen(1130px) {
       display: none;
     }
+    @include min-screen(1280px) {
+      width: 298px;
+      height: 24px;
+      margin-bottom: 20px;
+    }
   }
   &__row {
     display: grid;
@@ -77,6 +105,10 @@
     margin-bottom: rem(25px);
     @include max-screen(1130px) {
       grid-template-columns: max-content auto;
+    }
+    @include min-screen(1280px) {
+      grid-column-gap: 50px;
+      margin-bottom: 25px;
     }
   }
   &__contact-info {
@@ -88,12 +120,18 @@
       grid-template-rows: repeat(2, 1fr);
       grid-row-gap: rem(32px);
     }
+    @include min-screen(1280px) {
+      grid-column-gap: 80px;
+    }
     &__address {
       text-transform: uppercase;
       white-space: nowrap;
     }
     &__contacts {
       margin-top: rem(17px);
+      @include min-screen(1280px) {
+        margin-top: 17px;
+      }
       @include max-screen(767px) {
         a {
           display: inline-block;
@@ -130,8 +168,14 @@
     @include max-screen(1130px) {
       display: none;
     }
+    @include min-screen(1280px) {
+      grid-column-gap: 50px;
+    }
     ul li {
       margin-bottom: rem(12px);
+      @include min-screen(1280px) {
+        margin-bottom: 12px;
+      }
     }
   }
   &__feedback {
@@ -147,10 +191,16 @@
       flex-flow: column nowrap;
       margin: 0;
     }
+    @include min-screen(1280px) {
+      margin-bottom: 20px;
+    }
     button:first-child {
       margin-right: rem(30px);
       @include max-screen(920px) {
         margin: rem(0 0 22px 0);
+      }
+      @include min-screen(1280px) {
+        margin-right: 30px;
       }
     }
   }
@@ -161,6 +211,10 @@
     @include max-screen(920px) {
       display: none;
     }
+    @include min-screen(1280px) {
+      margin-right: 20px;
+      padding-right: 32px;
+    }
     &:after {
       content: '';
       display: block;
@@ -170,6 +224,11 @@
       width: rem(22px);
       height: rem(22px);
       background: url('/src/images/footer/letter.png') no-repeat center/cover;
+      @include min-screen(1280px) {
+        top: -5px;
+        width: 22px;
+        height: 22px;
+      }
     }
   }
   &__data {
@@ -182,6 +241,9 @@
     }
     &-title {
       margin-right: rem(4px);
+      @include min-screen(1280px) {
+        margin-right: 4px;
+      }
     }
     &-data {
       color: #c2c2c2;

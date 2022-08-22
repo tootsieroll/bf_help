@@ -18,6 +18,15 @@
   cursor: pointer;
   transition: 120ms;
 
+  @include min-screen(1280px) {
+    font-size: 15px;
+    line-height: 42px;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 174px;
+    height: 41px;
+  }
+
   &:hover,
   &:active {
     filter: brightness(95%);
