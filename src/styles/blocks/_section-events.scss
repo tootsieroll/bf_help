@@ -45,7 +45,25 @@
       display: inline-flex !important;
       align-items: center;
       justify-content: center;
-      padding: rem(0 30px);
+      padding: rem(30px);
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: rem(17px);
+        top: rem(30px);
+        left: rem(30px);
+        right: rem(30px);
+        bottom: rem(30px);
+        z-index: 1;
+        box-shadow: rem(-5px 5px 25px) rgba(107, 121, 131, 0.8);
+        opacity: 0;
+        transition: 200ms;
+      }
+      &:hover:before {
+        opacity: 1;
+      }
     }
     .slider-button {
       position: absolute;

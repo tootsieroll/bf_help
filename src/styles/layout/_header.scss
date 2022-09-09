@@ -183,8 +183,8 @@
         .menu-opened & {
           position: absolute;
           top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          left: 0;
+          transform: translate(0, -50%);
           animation: animation1 300ms linear forwards;
         }
         &:nth-child(2) {
@@ -200,19 +200,19 @@
 
 @keyframes animation1 {
   from {
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(0%, -50%) rotate(0deg);
   }
   to {
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(0%, -50%) rotate(45deg);
   }
 }
 @keyframes animation2 {
   from {
     width: rem(33px);
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(0%, -50%) rotate(0deg);
   }
   to {
     width: rem(39px);
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(0%, -50%) rotate(-45deg);
   }
 }

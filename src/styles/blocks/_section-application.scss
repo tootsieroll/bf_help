@@ -120,6 +120,7 @@
     &:active {
       filter: brightness(95%);
       text-decoration: none;
+      @include effect-biruza;
     }
 
     &--about {
@@ -149,6 +150,11 @@
       background: linear-gradient(111.56deg, #2c5e5b 18.82%, #415c7a 64.16%);
       color: transparentize(white, 0.13);
       padding-top: rem(12px);
+      margin-bottom: rem(20px);
+      &:hover,
+      &:active {
+        box-shadow: rem(0 0 20px) transparentize(#2c5e5b, 0.5);
+      }
     }
   }
 }

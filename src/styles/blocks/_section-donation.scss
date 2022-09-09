@@ -39,5 +39,7 @@
     width: 100%;
     max-width: rem(945px);
     min-height: rem(365px);
+    display: flex;
+    justify-content: center;
   }
 }
