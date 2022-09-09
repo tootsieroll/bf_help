@@ -52,10 +52,12 @@
         display: block;
         position: absolute;
         border-radius: rem(17px);
+        width: rem(471px);
+        height: rem(611px);
         top: rem(30px);
-        left: rem(30px);
-        right: rem(30px);
         bottom: rem(30px);
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 1;
         box-shadow: rem(-5px 5px 25px) rgba(107, 121, 131, 0.8);
         opacity: 0;
